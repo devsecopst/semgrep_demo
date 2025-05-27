@@ -16,12 +16,15 @@ public class VulnerableService {
     private static final Logger logger = LogManager.getLogger(VulnerableService.class);
 
     // Hardcoded secret - example of secret scanning
-    private static final String API_KEY = "sk_test_1234567890abcdef";
+    private static final String API_KEY = "sk_test_1234567456789)(*^&*jghjhfgjhgkhljsfdxcvb890abcdef";
 
     public void vulnerableSqlQuery(String userInput) {
         try {
             Connection conn = DriverManager.getConnection("jdbc:h2:mem:testdb", "sa", "");
             Statement stmt = conn.createStatement();
+
+
+
 
             // Vulnerable to SQL Injection - user input concatenated directly
             String query = "SELECT * FROM users WHERE username = '" + userInput + "'";
