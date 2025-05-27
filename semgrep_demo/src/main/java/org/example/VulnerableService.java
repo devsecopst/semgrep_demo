@@ -43,6 +43,9 @@ public class VulnerableService {
         System.out.println("API Key: " + API_KEY);
     }
 
+
+
+
     // Insecure Jackson deserialization - polymorphic deserialization enabled without filtering
     public void jacksonDeserialize(String jsonPayload) {
         try {

@@ -1,0 +1,9 @@
+repos:
+  - repo: local
+    hooks:
+      - id: semgrep-warn-only
+        name: Semgrep (Warn Only)
+        entry: sh /Users/emran/semgrep_demo/semgrep_demo/semgrep-warn-only.sh
+        language: system
+        pass_filenames: false
+        verbose: true

