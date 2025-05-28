@@ -23,9 +23,6 @@ public class VulnerableService {
             Connection conn = DriverManager.getConnection("jdbc:h2:mem:testdb", "sa", "");
             Statement stmt = conn.createStatement();
 
-
-
-
             // Vulnerable to SQL Injection - user input concatenated directly
             String query = "SELECT * FROM users WHERE username = '" + userInput + "'";
             ResultSet rs = stmt.executeQuery(query);
