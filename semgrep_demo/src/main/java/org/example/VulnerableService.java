@@ -17,6 +17,9 @@ public class VulnerableService {
 
     // Hardcoded secret - example of secret scanning
     private static final String API_KEY = "sk_test_1234567456789)(*^&*jghjhfgjhgkhljsfdxcvb890abcdef";
+    private static final String API_KEY2 = "sk_test_1234567456789)(*^&*jghjhfgjhgkhljsfdxcvb890abcdef";
+    private static final String API_KEY3 = "sk_test_1234567456789)(*^&*jghjhfgjhgkhljsfdxcvb890abcdef";
+    private static final String API_KEY4 = "sk_test_1234567456789)(*^&*jghjhfgjhgkhljsfdxcvb890abcdef";
 
     public void vulnerableSqlQuery(String userInput) {
         try {
@@ -30,6 +33,10 @@ public class VulnerableService {
             while (rs.next()) {
                 System.out.println("User found: " + rs.getString("username"));
             }
+
+
+
+
 
             rs.close();
             stmt.close();
