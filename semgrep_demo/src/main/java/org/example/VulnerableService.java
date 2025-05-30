@@ -21,6 +21,7 @@ public class VulnerableService {
     private static final String API_KEY3 = "sk_test_1234567456789)(*^&*jghjhfgjhgkhljsfdxcvb890abcdef";
     private static final String API_KEY4 = "sk_test_1234567456789)(*^&*jghjhfgjhgkhljsfdxcvb890abcdef";
 
+
     public void vulnerableSqlQuery(String userInput) {
         try {
             Connection conn = DriverManager.getConnection("jdbc:h2:mem:testdb", "sa", "");
