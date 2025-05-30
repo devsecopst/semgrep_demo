@@ -56,21 +56,7 @@ public class secretsDemo {
         // 🔑 JWT Secrets
         String jwtSecret = "P8Lm9uQ93YzFz6Ar@#5cLKMnf8!JHbdE6vZ4UPpTfL";
 
-        // 🔐 SSH Private Key
-        String sshPrivateKey = """
-        -----BEGIN OPENSSH PRIVATE KEY-----
-        b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAA...
-        k4ZSkY6nAoGBANZhrjOi2Q5XrSgfOxJ2+Lk58D...
-        -----END OPENSSH PRIVATE KEY-----
-        """;
 
-        // 🔐 RSA Private Key
-        String rsaPrivateKey = """
-        -----BEGIN RSA PRIVATE KEY-----
-        MIIEpQIBAAKCAQEA1LnpIY5M1zjL7vLlWzJrL4M...
-        FZih9X64RyjzI3qCBq9a8RkM7+JqKsb+ZwIDAQAB
-        -----END RSA PRIVATE KEY-----
-        """;
 
         // ❌ Embedded credentials in URLs
         String mongoUrl = "mongodb://root:9rDfT&z7qKpLs@mongo.internal:27017/admin";
