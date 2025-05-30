@@ -23,9 +23,6 @@ public class secretsDemo {
 
 
 
-        // 🧠 Slack token
-        String slackBotToken = "xoxb-123456789012-123456789012-ABCDEFGHIJKLMNO123456";
-
         // 🧬 GitHub token
         String githubToken = "ghp_1234567890abcdefghijklmnopqrstuvwx";
         // ❌ Embedded credentials in URL
