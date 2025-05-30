@@ -12,6 +12,10 @@ public class secretsDemo {
         // 🔐 GitLab Token
         String gitlabToken = "glpat-28eFqsNLmXKJxuPbaYBZ";
 
+
+        String gitlabToken2 = "glpat-28eFqsNLmXKJxuPbaYBZ";
+
+
         // 🔐 Slack Bot Token
         String slackBotToken = "xoxb-875392083274-987654321098-zD47HhU0LvIUGY6oDsP7hVJf";
 
