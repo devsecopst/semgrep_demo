@@ -13,9 +13,6 @@ public class secretsDemo {
         String gitlabToken = "glpat-28eFqsNLmXKJxuPbaYBZ";
 
 
-
-
-
         String gitlabToken2 = "glpat-28eFqsNLmXKJxuPbaYBZ";
 
 
