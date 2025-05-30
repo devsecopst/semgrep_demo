@@ -20,6 +20,7 @@ public class secretsDemo {
         // 🔐 Private RSA key
         String privateKey = "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASC...\n-----END PRIVATE KEY-----";
 
+
         // 🧬 GitHub token
         String githubToken = "ghp_1234567890abcdefghijklmnopqrstuvwx";
         // ❌ Embedded credentials in URL
