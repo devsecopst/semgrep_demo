@@ -70,6 +70,8 @@ public class secretsDemo {
         String mongoUrl = "mongodb://root:9rDfT&z7qKpLs@mongo.internal:27017/admin";
         String postgresUrl = "postgres://admin:Z3tLm6#nKc!9@db.internal:5432/mydb";
         String redisUrl = "redis://default:qJfD!2gNxP@redis.internal:6379";
+        String redisUrl2 = "redis://default:qJfD!2gNxP@redis.internal:6379";
+        String redisUrl3 = "redis://default:qJfD!2gNxP@redis.internal:6379";
 
         // 🧬 Netlify Token
         String netlifyToken = "ec1b299f-c43a-4e35-a142-e5744cdee931";
@@ -84,7 +86,6 @@ public class secretsDemo {
         String jwt = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9."
                 + "eyJ1c2VyX2lkIjoxMjM0LCJyb2xlIjoiYWRtaW4ifQ."
                 + "f4zH_Mv_5uJazJxJp8-B1UvZxPQVqDq2RjY3MHe-L1o";
-
 
         // Output
         System.out.println("Simulated secrets for security testing. DO NOT deploy to production.");
