@@ -31,6 +31,7 @@ public class secretsDemo {
         // 🔐 Google OAuth Client Secret
         String googleClientSecret = "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";
 
+
         // 🔐 Facebook App Secret
         String fbAppSecret = "e843ff7de8583c3c1d29c1de473c66a7";
 
