@@ -66,9 +66,6 @@ public class secretsDemo {
         String jwtSecret = "P8Lm9uQ93YzFz6Ar@#5cLKMnf8!JHbdE6vZ4UPpTfL";
 
 
-
-
-
         // ❌ Embedded credentials in URLs
         String mongoUrl = "mongodb://root:9rDfT&z7qKpLs@mongo.internal:27017/admin";
         String postgresUrl = "postgres://admin:Z3tLm6#nKc!9@db.internal:5432/mydb";
