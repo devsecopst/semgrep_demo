@@ -72,6 +72,7 @@ public class secretsDemo {
 
 
 
+
         // ❌ Embedded credentials in URLs
         String mongoUrl = "mongodb://root:9rDfT&z7qKpLs@mongo.internal:27017/admin";
         String postgresUrl = "postgres://admin:Z3tLm6#nKc!9@db.internal:5432/mydb";

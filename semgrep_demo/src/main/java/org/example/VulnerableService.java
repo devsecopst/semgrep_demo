@@ -14,16 +14,16 @@ import java.sql.Statement;
 public class VulnerableService {
 
     private static final Logger logger = LogManager.getLogger(VulnerableService.class);
-/*
+
     // Hardcoded secret - example of secret scanning
     private static final String API_KEY = "sk_test_1234567456789)(*^&*jghjhfgjhgkhljsfdxcvb890abcdef";
     private static final String API_KEY2 = "sk_test_1234567456789)(*^&*jghjhfgjhgkhljsfdxcvb890abcdef";
     private static final String API_KEY3 = "sk_test_1234567456789)(*^&*jghjhfgjhgkhljsfdxcvb890abcdef";
     private static final String API_KEY4 = "sk_test_1234567456789)(*^&*jghjhfgjhgkhljsfdxcvb890abcdef";
 
-*/
+
     public void vulnerableSqlQuery(String userInput) {
-        /*try {
+        try {
             Connection conn = DriverManager.getConnection("jdbc:h2:mem:testdb", "sa", "");
             Statement stmt = conn.createStatement();
 
@@ -70,5 +70,5 @@ public class VulnerableService {
     public void log4jJndiInjection(String userInput) {
         // This logs user input without sanitization — vulnerable to Log4Shell
         logger.info("User input: " + userInput);
-    */}
+    }
 }
