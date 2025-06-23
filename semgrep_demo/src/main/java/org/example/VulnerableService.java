@@ -54,6 +54,7 @@ public class VulnerableService {
 
 
 
+
     // Insecure Jackson deserialization - polymorphic deserialization enabled without filtering
     public void jacksonDeserialize(String jsonPayload) {
         try {
