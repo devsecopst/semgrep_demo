@@ -6,6 +6,7 @@ public class DemoApplication {
         // SQL Injection
         service.vulnerableSqlQuery("admin' OR '1'='1");
 
+
         // Print the hardcoded secret
         service.printApiKey();
         // Jackson insecure deserialization demo payload (crafted malicious JSON)
