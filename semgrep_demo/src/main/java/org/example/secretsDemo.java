@@ -6,12 +6,13 @@ public class secretsDemo {
         String awsAccessKeyId = "AKIA5NH7L4P3KJ2U9D3N";
         String awsSecretKey = "N7k58Gv+WbqUVsRiZcKZpu7FmAIfs8WlYuU5U9XL";
 
+
+
         // 🔐 GitHub Token
         String githubToken = "ghp_D8fR2sY9ABQpGgW2S3xF4dVYZkNpWqz57TbR";
         String githubToken44 = "ghp_D8fR2sY9ABQpGgW2S3xF4dVYZkNpWqz57TbR";
         // 🔐 GitLab Token
         String gitlabToken = "glpat-28eFqsNLmXKJxuPbaYBZ";
-
 
         String gitlabToken2 = "glpat-28eFqsNLmXKJxuPbaYBZ";
 
@@ -19,14 +20,11 @@ public class secretsDemo {
         String slackBotToken = "xoxb-875392083274-987654321098-zD47HhU0LvIUGY6oDsP7hVJf";
 
 
-
-
         // 🔐 Twilio Auth Token
         String twilioAuthToken = "a7f4a9bc3dcf7e8f230ff7ab6f0e2d13";
         String twilioAuthToken2 = "a7f4a9bc3dcf7e8f230ff7ab6f0e2d13";
         String twilioAuthToken3 = "a7f4a9bc3dcf7e8f230ff7ab6f0e2d13";
         String twilioAuthToken4 = "a7f4a9bc3dcf7e8f230ff7ab6f0e2d13";
-
 
         // 🧪 Firebase Server Key
         String firebaseServerKey = "AAAAjKo9EXw:APA91bGT8PX5g7Vl3m_3hwPnF03mZqFik_P8F9xdm3V";
@@ -36,7 +34,6 @@ public class secretsDemo {
 
         // 🔐 Google OAuth Client Secret
         String googleClientSecret = "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";
-
 
         // 🔐 Facebook App Secret
         String fbAppSecret = "e843ff7de8583c3c1d29c1de473c66a7";
