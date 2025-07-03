@@ -18,6 +18,6 @@ repos:
       hooks:
         -   id: semgrep
             entry: semgrep
-            args: ["ci", "--dry-run", "--baseline-commit","HEAD"]
+            args: ["ci", "--dry-run", "--no-suppress-errors"]
             verbose: true
             pass_filenames: false
