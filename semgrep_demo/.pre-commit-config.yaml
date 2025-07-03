@@ -14,5 +14,5 @@ repos:
       hooks:
         -   id: semgrep
             entry: semgrep
-            args: ["ci", "--dry-run", "--no-suppress-errors"]
+            args: ["ci","--code","--secrets","--dry-run", "--no-suppress-errors"]
             pass_filenames: false
