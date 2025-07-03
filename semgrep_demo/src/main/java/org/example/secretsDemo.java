@@ -44,6 +44,8 @@ public class secretsDemo {
         // 🪪 Basic Auth Header
         String basicAuth = "Authorization: Basic YWRtaW46c2VjcmV0UGFzcw==";
 
+
+
         // 🔐 Hardcoded passwords
         String mysqlPassword = "Jj82!gL!2vBc#3Nm";
         String dbRootPassword = "3u8Gx9h$TfZmNpQ0";
