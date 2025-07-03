@@ -5,7 +5,7 @@ repos:
         name: Semgrep (Warn Only)
         entry: bash ./semgrep_demo/semgrep-warn-only.sh
         language: system
-        pass_filenames: false
+        pass_filenames: true
         verbose: true
         stages: [pre-commit]
         always_run: true  # optional if your script always runs regardless of file changes
