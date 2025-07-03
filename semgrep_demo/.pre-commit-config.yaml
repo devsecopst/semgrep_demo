@@ -1,14 +1,23 @@
 repos:
-  - repo: local
-    hooks:
-      - id: semgrep-warn-only
-        name: Semgrep (Warn Only)
-        entry: ./semgrep_demo/semgrep-warn-only.sh
-        language: system
-        pass_filenames: false
-        verbose: true
-        stages: [pre-commit]
-        always_run: false  #optional if your script always runs regardless of file changes
-
-
-
+  -   repo: https://github.com/pre-commit/pre-commit-hooks
+      rev: v5.0.0
+      hooks:
+        -   id: check-yaml
+        -   id: end-of-file-fixer
+        -   id: trailing-whitespace
+  -   repo: https://github.com/psf/black
+      rev: 25.1.0
+      hooks:
+        -   id: black
+  -   repo: https://github.com/psf/black
+      rev: 25.1.0
+      hooks:
+        -   id: black
+  -   repo: https://github.com/semgrep/pre-commit
+      rev: v1.127.0
+      hooks:
+        -   id: semgrep
+            entry: semgrep
+            args: ["ci", "--dry-run", "--baseline-commit","HEAD"]
+            verbose: true
+            pass_filenames: false
