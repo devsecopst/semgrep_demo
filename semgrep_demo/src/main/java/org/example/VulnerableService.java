@@ -36,9 +36,6 @@ public class VulnerableService {
             }
 
 
-
-
-
             rs.close();
             stmt.close();
             conn.close();
@@ -46,13 +43,6 @@ public class VulnerableService {
             e.printStackTrace();
         }
     }
-
-
-
-
-
-
-
 
 
     public void printApiKey() {

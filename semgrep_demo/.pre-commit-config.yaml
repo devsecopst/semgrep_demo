@@ -9,15 +9,10 @@ repos:
       rev: 25.1.0
       hooks:
         -   id: black
-  -   repo: https://github.com/psf/black
-      rev: 25.1.0
-      hooks:
-        -   id: black
   -   repo: https://github.com/semgrep/pre-commit
       rev: v1.127.0
       hooks:
         -   id: semgrep
             entry: semgrep
             args: ["ci", "--dry-run", "--no-suppress-errors"]
-            verbose: true
             pass_filenames: false
