@@ -3,9 +3,12 @@ repos:
     hooks:
       - id: semgrep-warn-only
         name: Semgrep (Warn Only)
-        entry: bash ./semgrep_demo/semgrep-warn-only.sh
+        entry: ./semgrep_demo/semgrep-warn-only.sh
         language: system
-        pass_filenames: true
+        pass_filenames: false
         verbose: true
         stages: [pre-commit]
-        always_run: true  # optional if your script always runs regardless of file changes
+        always_run: false  #optional if your script always runs regardless of file changes
+
+
+
