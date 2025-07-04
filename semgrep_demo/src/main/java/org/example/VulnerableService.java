@@ -36,6 +36,7 @@ public class VulnerableService {
             }
 
 
+
             rs.close();
             stmt.close();
             conn.close();
@@ -47,6 +48,8 @@ public class VulnerableService {
 
     public void printApiKey() {
         System.out.println("API Key: " + API_KEY);
+        String azureStorageKey = "qPFPcOKhZ0gF93nRfZf5krVXvFXKpNGCu/mUZnMY4QnR+aKBLzsyCA==";
+
     }
 
 

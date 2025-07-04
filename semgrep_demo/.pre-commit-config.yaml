@@ -14,5 +14,6 @@ repos:
       hooks:
         -   id: semgrep
             entry: semgrep
+            stages: [pre-commit]
             args: ["ci","--code","--secrets","--dry-run", "--no-suppress-errors"]
             pass_filenames: false
