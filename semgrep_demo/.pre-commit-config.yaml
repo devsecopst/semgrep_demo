@@ -1,11 +1,7 @@
 repos:
   - repo: https://github.com/semgrep/pre-commit
-    rev: v1.127.0
+    rev: 'v1.127.0'
     hooks:
-      - id: semgrep
-        stages: [pre-commit]
-        pass_filenames: true  # ✅ Only scan staged files
-        args:
-          - "--config=auto"    # 🔍 Automatically detects rules
-          - "--secrets"        # 🔐 Enable secrets scan
-          - "--disable-version-check"
+      - id:  semgrep
+        pass_filenames: false
+        args: ["ci", "--dry-run", "--baseline-commit", "HEAD", "--secrets"]
