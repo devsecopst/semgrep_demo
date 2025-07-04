@@ -10,39 +10,31 @@ public class secretsDemo {
         String githubToken44 = "ghp_D8fR2sY9ABQpGgW2S3xF4dVYZkNpWqz57TbR";
         // 🔐 GitLab Token
         String gitlabToken = "glpat-28eFqsNLmXKJxuPbaYBZ";
-
         String gitlabToken2 = "glpat-28eFqsNLmXKJxuPbaYBZ";
-
         // 🔐 Slack Bot Token
         String slackBotToken = "xoxb-875392083274-987654321098-zD47HhU0LvIUGY6oDsP7hVJf";
-
-
         // 🔐 Twilio Auth Token
         String twilioAuthToken = "a7f4a9bc3dcf7e8f230ff7ab6f0e2d13";
         String twilioAuthToken2 = "a7f4a9bc3dcf7e8f230ff7ab6f0e2d13";
         String twilioAuthToken3 = "a7f4a9bc3dcf7e8f230ff7ab6f0e2d13";
         String twilioAuthToken4 = "a7f4a9bc3dcf7e8f230ff7ab6f0e2d13";
-
         // 🧪 Firebase Server Key
         String firebaseServerKey = "AAAAjKo9EXw:APA91bGT8PX5g7Vl3m_3hwPnF03mZqFik_P8F9xdm3V";
-
         // 🔐 Shopify Private App Password
         String shopifyAppPassword = "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";
-
         // 🔐 Google OAuth Client Secret
         String googleClientSecret = "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";
-
         // 🔐 Facebook App Secret
         String fbAppSecret = "e843ff7de8583c3c1d29c1de473c66a7";
-
         // 🔑 Azure Storage Key
         String azureStorageKey = "qPFPcOKhZ0gF93nRfZf5krVXvFXKpNGCu/mUZnMY4QnR+aKBLzsyCA==";
-
         // 🔐 Stripe Secret Key
         String stripeSecretKey = "sk_live_51KwE4MDISaZs1IjAJC5w8Y7JvWxz63LzWaHOXxZlWlM8OgQ";
 
+
         // 🪪 Basic Auth Header
         String basicAuth = "Authorization: Basic YWRtaW46c2VjcmV0UGFzcw==";
+
 
         // 🔐 Hardcoded passwords
         String mysqlPassword = "Jj82!gL!2vBc#3Nm";
