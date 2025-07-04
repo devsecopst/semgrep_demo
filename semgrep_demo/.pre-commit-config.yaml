@@ -1,19 +1,23 @@
 repos:
-  -   repo: https://github.com/pre-commit/pre-commit-hooks
-      rev: v5.0.0
-      hooks:
-        -   id: check-yaml
-        -   id: end-of-file-fixer
-        -   id: trailing-whitespace
-  -   repo: https://github.com/psf/black
-      rev: 25.1.0
-      hooks:
-        -   id: black
-  -   repo: https://github.com/semgrep/pre-commit
-      rev: v1.127.0
-      hooks:
-        -   id: semgrep
-            entry: semgrep
-            stages: [pre-commit]
-            args: ["ci","--code","--secrets","--dry-run", "--no-suppress-errors"]
-            pass_filenames: false
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: check-yaml
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+
+  - repo: https://github.com/psf/black
+    rev: 25.1.0
+    hooks:
+      - id: black
+
+  - repo: https://github.com/semgrep/pre-commit
+    rev: v1.127.0
+    hooks:
+      - id: semgrep
+        stages: [pre-commit]
+        pass_filenames: true  # ✅ Only scan staged files
+        args:
+          - "--config=auto"    # 🔍 Automatically detects rules
+          - "--secrets"        # 🔐 Enable secrets scan
+          - "--disable-version-check"
