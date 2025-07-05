@@ -1,8 +1,20 @@
 repos:
-  - repo: https://github.com/semgrep/pre-commit
-    rev: 'v1.128.0'
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.3.0
     hooks:
-      - id: semgrep
-        name: semgrep
-        entry: semgrep
-        args: ["--pro", "--disable-version-check", "--quiet", "--skip-unknown-extensions"]
+      -   id: check-yaml
+      -   id: end-of-file-fixer
+      -   id: trailing-whitespace
+  -   repo: https://github.com/psf/black
+      rev: 22.10.0
+      hooks:
+        -   id: black
+  - repo: local
+    default_stages: [pre-push]
+    hooks:
+      - id: semgrep-warn-only
+        name: Semgrep Warn-Only
+        entry: bash ./semgrep-warn-only.sh
+        language: system
+        pass_filenames: true
+        verbose: true
