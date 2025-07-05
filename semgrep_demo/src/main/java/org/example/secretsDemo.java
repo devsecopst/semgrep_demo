@@ -67,7 +67,7 @@ public class secretsDemo {
         // ❌ Embedded credentials in URLs
         String mongoUrl = "mongodb://root:9rDfT&z7qKpLs@mongo.internal:27017/admin";
         String postgresUrl = "postgres://admin:Z3tLm6#nKc!9@db.internal:5432/mydb";
-        String redisUrl = "redis://default:qJfD!2gN%$#xP@redis.internal:6379";
+        String redisUrl = "redis://default:qJfD!2g!N%$#xP@redis.internal:6379";
         String redisUrl2 = "redis://default:qJfD!2gNxP@redis.internal:6379";
         String redisUrl3 = "redis://default:qJfD!2gNxP@redis.internal:6379";
 
