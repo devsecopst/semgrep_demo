@@ -1,13 +1,13 @@
 default_stages: [pre-commit]
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v2.3.0
+    rev: v5.0.0
     hooks:
       - id: check-yaml
       - id: end-of-file-fixer
       - id: trailing-whitespace
   - repo: https://github.com/psf/black
-    rev: 22.10.0
+    rev: 25.1.0
     hooks:
       - id: black
   - repo: local
@@ -16,7 +16,7 @@ repos:
         name: Devsecops-Semgrep Warn-Only
         entry: bash /Users/emran/semgrep_demo/semgrep_demo/semgrep-warn-only.sh
         language: system
-        stages: [pre-commit]
+        stages: [pre-push]
         pass_filenames: false
         exclude_types: [yaml,xml,shell]
         exclude: '\.txt$'
