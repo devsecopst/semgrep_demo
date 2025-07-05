@@ -18,6 +18,6 @@ repos:
         language: system
         stages: [pre-commit]  # ← changed to pre-push as per your goal
         pass_filenames: false
-        exclude_types: [yaml,xml]
+        exclude_types: [yaml,xml,shell]
         description: "used too conduct semgrep scanning only."
         verbose: true

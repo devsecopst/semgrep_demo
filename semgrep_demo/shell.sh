@@ -15,4 +15,4 @@ semgrep \
   --config p/dockerfile \
   --config p/docker-compose \
   --skip-unknown-extensions \
-  --disable-version-check \
+  --disable-version-check

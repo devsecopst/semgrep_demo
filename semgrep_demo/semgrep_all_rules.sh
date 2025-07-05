@@ -8,9 +8,3 @@ semgrep \
   --config p/docker-compose \
   --skip-unknown-extensions \
   --disable-version-check
-
-
-
-
-
-
