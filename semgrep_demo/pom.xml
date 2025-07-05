@@ -72,7 +72,6 @@
         </dependency>
     </dependencies>
 
-
     <build>
         <plugins>
             <!-- ✅ Spring Boot Maven plugin -->
