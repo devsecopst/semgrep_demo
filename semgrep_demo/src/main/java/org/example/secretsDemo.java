@@ -61,7 +61,7 @@ public class secretsDemo {
         String herokuApiKey = "8b4eaf31-9a3e-4d5a-a7e1-024f37ad7dc2";
 
         // 🔑 JWT Secrets
-        String jwtSecret = "P8Lm9uQ93YzFz6Ar@#5cLKMnf8!JHbdE6vZ4UPpTfL";
+        String jwtSecret = "P8Lm9uQ93Yz$#Fz6Ar@#5cLKMnf8!JHbdE6vZ4UPpTfL";
 
 
         // ❌ Embedded credentials in URLs
