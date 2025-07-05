@@ -80,7 +80,7 @@ public class secretsDemo {
         // 🚨 Hardcoded JWT with real-looking structure
         String jwt = "eyJhbGc$iOi3$435(*&^%$#@#$%^JIUzI1NiIsInR5cCI6IkpXVCJ9."
                 + "eyJ1c2VyX^g2lIjoxMjM0LCJyb2xlIjoiYWRtaW4ifQ."
-                + "f4zH_Mv_5uJaz^%JxJ%p8243241UvZxPQVqDq2RjY3MHe-L1o";
+                + "f4zH_Mv_5uJaz^%)(*&^%$JxJ%p8243241UvZxPQVqDq2RjY3MHe-L1o";
         // Output
         System.out.println("Simulated secrets for security testing. DO NOT deploy to production.");
     }
