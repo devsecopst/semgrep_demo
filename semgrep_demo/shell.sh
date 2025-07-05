@@ -1,4 +1,4 @@
-semgrep \
+semgrep  \
   --config p/gitleaks \
   --config p/secrets \
   --config p/command-injection \
