@@ -3,3 +3,4 @@ repos:
     rev: 'v1.128.0'
     hooks:
       - id:  semgrep-ci
+        verbose: yes
