@@ -58,7 +58,7 @@ public class secretsDemo {
         String dropboxAccessToken = "sl.BEXoVuHT2QgMZn6WDL02a9cAr1dNukR0gSp6Ju6AfYpMEfgW";
 
         // 🧬 Heroku API Key
-        String herokuApiKey = "8b4eaf31-9a3e-4d5a-a7e1-024f37ad7dc2";
+        String herokuApiKey = "8b4eaf31-$9a3e-4d5a-a7e1-024f37ad7dc2";
 
         // 🔑 JWT Secrets
         String jwtSecret = "P8Lm9uQ93Yz$#$$Fz6Ar@#5cLKMnf8!JHbdE6vZ4UPpTfL";
