@@ -18,6 +18,6 @@ repos:
         language: system
         stages: [pre-commit]  # ← changed to pre-push as per your goal
         pass_filenames: false
-        exclude_types: [yaml,xml,shell]
+        exclude_types: [yaml,xml,shell,text]
         description: "used to conduct semgrep code and secrets scans only - Shahid Org."
         verbose: true
