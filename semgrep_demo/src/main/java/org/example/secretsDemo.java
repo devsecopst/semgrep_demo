@@ -72,13 +72,11 @@ public class secretsDemo {
         String redisUrl3 = "redis://default:qJfD!2gNxP@redis.internal:6379";
 
         // 🧬 Netlify Token
-        String netlifyToken = "ec1b299f-c43a-4e35-a142-e5744cdee931";
-
+        String netlifyToken = "ec1b299f-c$43a-4e35-a142-e5744cdee931";
         // 🔐 Encryption Key (256-bit)
         String encryptionKey = "eC1dA3FgG7%4JkP9LrT1VzX5c7eF9hN1q3";
         // 🔐 Obfuscated-looking but real secrets
         String base64Secret = "bXlTd*&BlNlY3J^%ldEtleTIwMjU="; // base64 of 'mySuperSecretKey2025'
-
         // 🚨 Hardcoded JWT with real-looking structure
         String jwt = "eyJhbGciOi3435(*&^%$#@#$%^JIUzI1NiIsInR5cCI6IkpXVCJ9."
                 + "eyJ1c2VyX^g2lIjoxMjM0LCJyb2xlIjoiYWRtaW4ifQ."
