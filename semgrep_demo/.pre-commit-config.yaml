@@ -16,7 +16,7 @@ repos:
         name: Devsecops-Semgrep Warn-Only
         entry: bash /Users/emran/semgrep_demo/semgrep_demo/semgrep-warn-only.sh
         language: system
-        stages: [pre-push]
+        stages: [pre-commit]
         pass_filenames: false
         exclude_types: [yaml,xml,shell]
         exclude: '\.txt$'
