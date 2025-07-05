@@ -76,7 +76,6 @@ public class secretsDemo {
 
         // 🔐 Encryption Key (256-bit)
         String encryptionKey = "eC1dA3FgG7%4JkP9LrT1VzX5c7eF9hN1q3";
-
         // 🔐 Obfuscated-looking but real secrets
         String base64Secret = "bXlTd*&BlNlY3J^%ldEtleTIwMjU="; // base64 of 'mySuperSecretKey2025'
 
