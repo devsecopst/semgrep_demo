@@ -10,11 +10,10 @@ repos:
       hooks:
         -   id: black
   - repo: local
-    default_stages: [pre-push]
     hooks:
       - id: semgrep-warn-only
         name: Semgrep Warn-Only
-        entry: bash ./semgrep-warn-only.sh
+        entry: bash /Users/emran/semgrep_demo/semgrep_demo/semgrep-warn-only.sh
         language: system
         pass_filenames: true
         verbose: true
