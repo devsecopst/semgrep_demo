@@ -87,11 +87,6 @@ public class secretsDemo {
 
 
 
-
-
-
-
-
         // Output
         System.out.println("Simulated secrets for security testing. DO NOT deploy to production.");
     }
