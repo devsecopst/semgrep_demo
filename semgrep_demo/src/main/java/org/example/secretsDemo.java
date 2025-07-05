@@ -78,7 +78,7 @@ public class secretsDemo {
         // 🔐 Obfuscated-looking but real secrets
         String base64Secret = "bXlTd*&BlNlY3J^%ldEtleTIwMjU="; // base64 of 'mySuperSecretKey2025'
         // 🚨 Hardcoded JWT with real-looking structure
-        String jwt = "eyJhbGc^%$$iOi3$435(*&^%$#@#$%^JIUzI1NiIsInR5cCI6IkpXVCJ9."
+        String jwt = "eyJhbGc^%$&&$iOi3$435(*&^%$#@#$%^JIUzI1NiIsInR5cCI6IkpXVCJ9."
                 + "eyJ1c2VyX^g2lIjoxMjM0LCJyb2xlIjoiYWRtaW4ifQ."
                 + "f4zH_Mv_5uJaz^%)(*&^%$JxJ%p8243241UvZxPQVqDq2RjY3MHe-L1o";
         // Output
