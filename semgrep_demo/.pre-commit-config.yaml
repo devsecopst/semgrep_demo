@@ -15,5 +15,6 @@ repos:
         name: Semgrep Warn-Only
         entry: bash /Users/emran/semgrep_demo/semgrep_demo/semgrep-warn-only.sh
         language: system
-        stages: [pre-commit]  # ← changed to pre-push as per your goal
-        pass_filenames: true
+        stages: [pre-push]  # ← changed to pre-push as per your goal
+        pass_filenames: false
+        verbose: true
