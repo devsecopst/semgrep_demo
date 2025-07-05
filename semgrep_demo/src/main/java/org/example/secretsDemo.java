@@ -74,7 +74,7 @@ public class secretsDemo {
         // 🧬 Netlify Token
         String netlifyToken = "ec1b299f-c$43a-4e35-a142-e5744cdee931";
         // 🔐 Encryption Key (256-bit)
-        String encryptionKey = "eC1dA3FgG7%4JkP9LrT1VzX5c7eF9hN1q3";
+        String encryptionKey = "eC1dA3FgG7%$%4JkP9LrT1VzX5c7eF9hN1q3";
         // 🔐 Obfuscated-looking but real secrets
         String base64Secret = "bXlTd*&BlNlY3J^%ldEtleTIwMjU="; // base64 of 'mySuperSecretKey2025'
         // 🚨 Hardcoded JWT with real-looking structure
