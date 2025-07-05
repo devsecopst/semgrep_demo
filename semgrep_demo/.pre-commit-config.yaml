@@ -18,4 +18,5 @@ repos:
         language: system
         stages: [pre-commit]  # ← changed to pre-push as per your goal
         pass_filenames: false
+        types: [java]
         verbose: true
