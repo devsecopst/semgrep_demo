@@ -1,0 +1,680 @@
+                                   
+                                   
+┌─────────────────────────────────┐
+│ 11 Unvalidated Secrets Findings │
+└─────────────────────────────────┘
+                                              
+    src/main/java/org/example/secretsDemo.java
+    ❯❱ secrets.misc.generic_basic_auth_header.generic_basic_auth_header
+          A secret is hard-coded in the application. Secrets stored in source code, such as credentials,     
+          identifiers, and other types of sensitive data, can be leaked and used by internal or external     
+          malicious actors. It is recommended to rotate the secret and retrieve them from a secure secret    
+          vault or Hardware Security Module (HSM), alternatively environment variables can be used if allowed
+          by your company policy.                                                                            
+          Details: https://semgrep.dev/orgs/-/editor/r/9EYr                                                  
+                                                                                                             
+           36┆ String basicAuth = "Authorization: Basic ************************";
+   
+    ❯❱ secrets.generic.api-key.string.string
+          A secret is hard-coded in the application. Secrets stored in source code, such as credentials,     
+          identifiers, and other types of sensitive data, can be leaked and used by internal or external     
+          malicious actors. It is recommended to rotate the secret and retrieve them from a secure secret    
+          vault or Hardware Security Module (HSM), alternatively environment variables can be used if allowed
+          by your company policy.                                                                            
+          Details: https://semgrep.dev/orgs/-/editor/r/BYbz7                                                 
+                                                                                                             
+           45┆ String mailgunApiKey = "key-25g*****************************";
+   
+    ❯❱ secrets.services.mailgun_key_token.mailgun-key-token
+          A secret is hard-coded in the application. Secrets stored in source code, such as credentials,     
+          identifiers, and other types of sensitive data, can be leaked and used by internal or external     
+          malicious actors. It is recommended to rotate the secret and retrieve them from a secure secret    
+          vault or Hardware Security Module (HSM), alternatively environment variables can be used if allowed
+          by your company policy.                                                                            
+          Details: https://semgrep.dev/orgs/-/editor/r/Qjxq                                                  
+                                                                                                             
+           45┆ String mailgunApiKey = "key-25g*****************************";
+   
+    ❯❱ secrets.generic.api-key.string.string
+          A secret is hard-coded in the application. Secrets stored in source code, such as credentials,     
+          identifiers, and other types of sensitive data, can be leaked and used by internal or external     
+          malicious actors. It is recommended to rotate the secret and retrieve them from a secure secret    
+          vault or Hardware Security Module (HSM), alternatively environment variables can be used if allowed
+          by your company policy.                                                                            
+          Details: https://semgrep.dev/orgs/-/editor/r/BYbz7                                                 
+                                                                                                             
+           46┆ String mailgunApiKey2 = "key-25g*****************************";
+   
+    ❯❱ secrets.services.mailgun_key_token.mailgun-key-token
+          A secret is hard-coded in the application. Secrets stored in source code, such as credentials,     
+          identifiers, and other types of sensitive data, can be leaked and used by internal or external     
+          malicious actors. It is recommended to rotate the secret and retrieve them from a secure secret    
+          vault or Hardware Security Module (HSM), alternatively environment variables can be used if allowed
+          by your company policy.                                                                            
+          Details: https://semgrep.dev/orgs/-/editor/r/Qjxq                                                  
+                                                                                                             
+           46┆ String mailgunApiKey2 = "key-25g*****************************";
+   
+    ❯❱ secrets.generic.api-key.string.string
+          A secret is hard-coded in the application. Secrets stored in source code, such as credentials,     
+          identifiers, and other types of sensitive data, can be leaked and used by internal or external     
+          malicious actors. It is recommended to rotate the secret and retrieve them from a secure secret    
+          vault or Hardware Security Module (HSM), alternatively environment variables can be used if allowed
+          by your company policy.                                                                            
+          Details: https://semgrep.dev/orgs/-/editor/r/BYbz7                                                 
+                                                                                                             
+           52┆ String herokuApiKey = "8b4eaf3*****************************";
+   
+    ❯❱ secrets.misc.generic_mongodb_string.generic_mongodb_string
+          A secret is hard-coded in the application. Secrets stored in source code, such as credentials,     
+          identifiers, and other types of sensitive data, can be leaked and used by internal or external     
+          malicious actors. It is recommended to rotate the secret and retrieve them from a secure secret    
+          vault or Hardware Security Module (HSM), alternatively environment variables can be used if allowed
+          by your company policy.                                                                            
+          Details: https://semgrep.dev/orgs/-/editor/r/b5zr                                                  
+                                                                                                             
+           59┆ String mongoUrl = "mongodb://r********************************************";
+   
+    ❯❱ secrets.misc.generic_postgres_string.generic_postgres_string
+          A secret is hard-coded in the application. Secrets stored in source code, such as credentials,     
+          identifiers, and other types of sensitive data, can be leaked and used by internal or external     
+          malicious actors. It is recommended to rotate the secret and retrieve them from a secure secret    
+          vault or Hardware Security Module (HSM), alternatively environment variables can be used if allowed
+          by your company policy.                                                                            
+          Details: https://semgrep.dev/orgs/-/editor/r/y7EP                                                  
+                                                                                                             
+           60┆ String postgresUrl = "postgres:/*****************************************";
+   
+    ❯❱ secrets.misc.generic_redis_string.generic_redis_string
+          A secret is hard-coded in the application. Secrets stored in source code, such as credentials,     
+          identifiers, and other types of sensitive data, can be leaked and used by internal or external     
+          malicious actors. It is recommended to rotate the secret and retrieve them from a secure secret    
+          vault or Hardware Security Module (HSM), alternatively environment variables can be used if allowed
+          by your company policy.                                                                            
+          Details: https://semgrep.dev/orgs/-/editor/r/kqpz                                                  
+                                                                                                             
+           61┆ String redisUrl = "redis://d*************************************";
+            ⋮┆----------------------------------------
+           62┆ String redisUrl2 = "redis://d*************************************";
+            ⋮┆----------------------------------------
+           63┆ String redisUrl3 = "redis://d*************************************";
+                                 
+                                 
+┌───────────────────────────────┐
+│ 51 Non-blocking Code Findings │
+└───────────────────────────────┘
+                                                  
+    src/main/java/org/example/DemoApplication.java
+    ❯❱ gitlab.find_sec_bugs.HARD_CODE_KEY-2
+          Cryptographic keys should not be kept in the source code. The source code can be widely shared in an
+          enterprise environment, and is certainly shared in open source. To be managed safely, passwords and 
+          secret keys should be stored in separate configuration files or keystores.                          
+          Details: https://sg.run/obGN                                                                        
+                                                                                                              
+            9┆ String jwtSecret = "P8Lm9uQ93YzFz6Ar@#5cLKMnf8!JHbdE6vZ4UPpTfL";
+                                                 
+    src/main/java/org/example/PureVulnerable.java
+    ❯❱ gitlab.find_sec_bugs.PREDICTABLE_RANDOM-1
+          Depending on the context, generating weak random numbers may expose cryptographic functions which   
+          rely on these numbers, to be exploitable. When generating numbers for sensitive values such as      
+          tokens, nonces, and cryptographic keys, it is recommended that the `DRBG` instance of `SecureRandom`
+          be used.                                                                                            
+                                                                                                              
+          Example using `DRBG` with `SecureRandom`: ``` public SecureRandom getSecureRandomDRBG() throws      
+          NoSuchAlgorithmException { // Use DRBG according to                                                 
+          http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-90Ar1.pdf     return               
+          SecureRandom.getInstance("DRBG",             // Security strength in bits (default is 128)          
+          DrbgParameters.instantiation(256,                 // Set prediction resistance and re-seeding       
+          DrbgParameters.Capability.PR_AND_RESEED,                 // Set the personalization string          
+          (optional, not necessary)                 "some_personalization_string".getBytes()             )    
+          ); } ```                                                                                            
+                                                                                                              
+          For more information on Java Cryptography see:                                                      
+          https://docs.oracle.com/en/java/javase/15/security/java-cryptography-architecture-jca-reference-    
+          guide.html                                                                                          
+          Details: https://sg.run/1kbD                                                                        
+                                                                                                              
+           13┆ Random random = new Random();
+           14┆ int token = random.nextInt();
+            ⋮┆----------------------------------------
+           14┆ int token = random.nextInt();
+   
+    ❯❱ gitlab.find_sec_bugs.PT_ABSOLUTE_PATH_TRAVERSAL-1
+          The application dynamically constructs file or path information. If the path information comes from 
+          user input, it could be abused to read sensitive files, access other users' data, or aid in         
+          exploitation to gain further system access.                                                         
+                                                                                                              
+          User input should never be used in constructing paths or files for interacting with the filesystem. 
+          This includes filenames supplied by user uploads or downloads. If possible, consider hashing user   
+          input or replacing it with unique values and use `Path.resolve` to resolve and validate the path    
+          information prior to processing any file functionality.                                             
+                                                                                                              
+          Example using `Path.resolve` and not allowing direct user input: ``` // Class to store our user data
+          along with a randomly generated file name public static class UserData {     private String         
+          userFileNameUnsafe;     private String fileName;     public UserData(String userFileName) {         
+          this.userFileNameUnsafe = userFileName;         // Generate a random ID for the filename            
+          this.fileName = UUID.randomUUID().toString();     }     public String getUserFileNameUnsafe() {     
+          return userFileNameUnsafe; };     public String getFileName() { return fileName; }; }               
+                                                                                                              
+          public static void main(String[] args) throws Exception {     // User input, saved only as a        
+          reference     UserData userData = new UserData("..\\test.txt");     // Restrict all file processing 
+          to this directory only     String base = "/var/app/restricted";     Path basePath = Paths.get(base);
+          // Resolve the full path, but only use our random generated filename     Path fullPath =            
+          basePath.resolve(userData.getFileName());     // verify the path is contained within our basePath   
+          if (!fullPath.startsWith(base)) {         throw new Exception("Invalid path specified!");     }     
+          // process / work with file } ```                                                                   
+                                                                                                              
+          For more information on path traversal issues see OWASP: https://owasp.org/www-                     
+          community/attacks/Path_Traversal                                                                    
+          Details: https://sg.run/Ben5                                                                        
+                                                                                                              
+           31┆ File file = new File("/tmp/" + filename); // vulnerable to ../../etc/passwd
+    
+    
+          Taint comes from:
+    
+           30┆ String filename = scanner.nextLine();
+    
+    
+          Taint flows through these intermediate variables:
+    
+           30┆ String filename = scanner.nextLine();
+    
+    
+                This is how taint reaches the sink:
+    
+           31┆ File file = new File("/tmp/" + filename); // vulnerable to ../../etc/passwd
+    
+    
+            ⋮┆----------------------------------------
+           33┆ BufferedReader fileReader = new BufferedReader(new FileReader(file));
+    
+    
+          Taint comes from:
+    
+           30┆ String filename = scanner.nextLine();
+    
+    
+          Taint flows through these intermediate variables:
+    
+           30┆ String filename = scanner.nextLine();
+    
+           31┆ File file = new File("/tmp/" + filename); // vulnerable to ../../etc/passwd
+    
+    
+                This is how taint reaches the sink:
+    
+           33┆ BufferedReader fileReader = new BufferedReader(new FileReader(file));
+    
+    
+            ⋮┆----------------------------------------
+   
+    ❯❱ gitlab.find_sec_bugs.HARD_CODE_KEY-2
+          Cryptographic keys should not be kept in the source code. The source code can be widely shared in an
+          enterprise environment, and is certainly shared in open source. To be managed safely, passwords and 
+          secret keys should be stored in separate configuration files or keystores.                          
+          Details: https://sg.run/obGN                                                                        
+                                                                                                              
+           44┆ String password = "supersecret123"; // hardcoded password
+   
+    ❯❱ gitlab.find_sec_bugs.HARD_CODE_KEY-3
+          Cryptographic keys should not be kept in the source code. The source code can be widely shared in an
+          enterprise environment, and is certainly shared in open source. To be managed safely, passwords and 
+          secret keys should be stored in separate configuration files or keystores.                          
+          Details: https://sg.run/z561                                                                        
+                                                                                                              
+           44┆ String password = "supersecret123"; // hardcoded password
+   
+    ❯❱ gitlab.find_sec_bugs.UNENCRYPTED_SOCKET-1.UNENCRYPTED_SERVER_SOCKET-1
+          Beyond using an SSL socket, you need to make sure your use of SSLSocketFactory does all the        
+          appropriate certificate validation checks to make sure you are not subject to man-in-the-middle    
+          attacks. Please read the OWASP Transport Layer Protection Cheat Sheet for details on how to do this
+          correctly.                                                                                         
+          Details: https://sg.run/4k1Z                                                                       
+                                                                                                             
+           49┆ Socket socket = new Socket("attacker.com", 1337); // not encrypted
+   
+    ❯❱ java.lang.security.audit.crypto.unencrypted-socket.unencrypted-socket
+          Detected use of a Java socket that is not encrypted. As a result, the traffic could be read by an
+          attacker intercepting the network traffic. Use an SSLSocket created by 'SSLSocketFactory' or     
+          'SSLServerSocketFactory' instead.                                                                
+          Details: https://sg.run/W8zA                                                                     
+                                                                                                           
+           49┆ Socket socket = new Socket("attacker.com", 1337); // not encrypted
+                                                    
+    src/main/java/org/example/VulnerableService.java
+    ❯❱ gitlab.find_sec_bugs.HARD_CODE_KEY-2
+          Cryptographic keys should not be kept in the source code. The source code can be widely shared in an
+          enterprise environment, and is certainly shared in open source. To be managed safely, passwords and 
+          secret keys should be stored in separate configuration files or keystores.                          
+          Details: https://sg.run/obGN                                                                        
+                                                                                                              
+           19┆ private static final String API_KEY =                       
+               "sk_test_1234567456789)(*^&*jghjhfgjhgkhljsfdxcvb890abcdef";
+            ⋮┆----------------------------------------
+           20┆ private static final String API_KEY2 =                      
+               "sk_test_1234567456789)(*^&*jghjhfgjhgkhljsfdxcvb890abcdef";
+            ⋮┆----------------------------------------
+           21┆ private static final String API_KEY3 =                      
+               "sk_test_1234567456789)(*^&*jghjhfgjhgkhljsfdxcvb890abcdef";
+            ⋮┆----------------------------------------
+           22┆ private static final String API_KEY4 =                      
+               "sk_test_1234567456789)(*^&*jghjhfgjhgkhljsfdxcvb890abcdef";
+   
+   ❯❯❱ gitlab.find_sec_bugs.DMI_CONSTANT_DB_PASSWORD-1.HARD_CODE_PASSWORD-3
+          A potential hard-coded password was identified in a database connection string. Passwords should not
+          be stored directly in code but loaded from secure locations such as a Key Management System (KMS).  
+                                                                                                              
+          The purpose of using a Key Management System is so access can be audited and keys easily rotated in 
+          the event of a breach. By hardcoding passwords, it will be extremely difficult to determine when or 
+          if, a key is compromised.                                                                           
+                                                                                                              
+          The recommendation on which KMS to use depends on the environment the application is running in:    
+                                                                                                              
+          - For Google Cloud Platform consider [Cloud Key Management](https://cloud.google.com/kms/docs) - For
+          Amazon Web Services consider [AWS Key Management](https://aws.amazon.com/kms/) - For on premise or  
+          other alternatives to cloud providers, consider [Hashicorp's Vault](https://www.vaultproject.io/) - 
+          For other cloud providers, please see their documentation                                           
+          Details: https://sg.run/qZAx                                                                        
+                                                                                                              
+           27┆ Connection conn = DriverManager.getConnection("jdbc:h2:mem:testdb", "sa", "");
+   
+   ❯❯❱ gitlab.find_sec_bugs.DMI_EMPTY_DB_PASSWORD-1.HARD_CODE_PASSWORD-2
+          The application does not provide authentication when communicating a database server. It is strongly
+          recommended that the database server be configured with authentication and restrict what queries    
+          users can execute.                                                                                  
+                                                                                                              
+          Please see your database server's documentation on how to configure a password.                     
+                                                                                                              
+          Additionally, passwords should not be stored directly in code but loaded from secure locations such 
+          as a Key Management System (KMS).                                                                   
+                                                                                                              
+          The purpose of using a Key Management System is so access can be audited and keys easily rotated in 
+          the event of a breach. By hardcoding passwords, it will be extremely difficult to determine when or 
+          if, a key is compromised.                                                                           
+                                                                                                              
+          The recommendation on which KMS to use depends on the environment the application is running in:    
+                                                                                                              
+          - For Google Cloud Platform consider [Cloud Key Management](https://cloud.google.com/kms/docs) - For
+          Amazon Web Services consider [AWS Key Management](https://aws.amazon.com/kms/) - For on premise or  
+          other alternatives to cloud providers, consider [Hashicorp's Vault](https://www.vaultproject.io/) - 
+          For other cloud providers, please see their documentation                                           
+          Details: https://sg.run/lW3j                                                                        
+                                                                                                              
+           27┆ Connection conn = DriverManager.getConnection("jdbc:h2:mem:testdb", "sa", "");
+   
+   ❯❯❱ gitlab.find_sec_bugs.HARD_CODE_PASSWORD-1
+          A potential hard-coded password was identified in a hard-coded string. Passwords should not be      
+          stored directly in code but loaded from secure locations such as a Key Management System (KMS).     
+                                                                                                              
+          The purpose of using a Key Management System is so access can be audited and keys easily rotated in 
+          the event of a breach. By hardcoding passwords, it will be extremely difficult to determine when or 
+          if, a key is compromised.                                                                           
+                                                                                                              
+          The recommendation on which KMS to use depends on the environment the application is running in:    
+                                                                                                              
+          - For Google Cloud Platform consider [Cloud Key Management](https://cloud.google.com/kms/docs) - For
+          Amazon Web Services consider [AWS Key Management](https://aws.amazon.com/kms/) - For on premise or  
+          other alternatives to cloud providers, consider [Hashicorp's Vault](https://www.vaultproject.io/) - 
+          For other cloud providers, please see their documentation                                           
+          Details: https://sg.run/pNRN                                                                        
+                                                                                                              
+           27┆ Connection conn = DriverManager.getConnection("jdbc:h2:mem:testdb", "sa", "");
+   
+    ❯❱ gitlab.find_sec_bugs.CUSTOM_INJECTION-1
+          SQL Injection is a critical vulnerability that can lead to data or system compromise. By dynamically
+          generating SQL query strings, user input may be able to influence the logic of the SQL statement.   
+          This could lead to an adversary accessing information they should not have access to, or in some    
+          circumstances, being able to execute OS functionality or code.                                      
+                                                                                                              
+          Replace all dynamically generated SQL queries with parameterized queries. In situations where       
+          dynamic queries must be created, never use direct user input, but instead use a map or dictionary of
+          valid values and resolve them using a user-supplied key.                                            
+                                                                                                              
+          For example, some database drivers do not allow parameterized queries for `>` or `<` comparison     
+          operators. In these cases, do not use a user supplied `>` or `<` value, but rather have the user    
+          supply a `gt` or `lt` value. The alphabetical values are then used to look up the `>` and `<` values
+          to be used in the construction of the dynamic query. The same goes for other queries where column or
+          table names are required but cannot be parameterized.                                               
+                                                                                                              
+          Example using `PreparedStatement` queries: ``` // Some userInput String userInput = "someUserInput";
+          // Your connection string String url = "..."; // Get a connection from the DB via the DriverManager 
+          Connection conn = DriverManager.getConnection(url); // Create a prepared statement PreparedStatement
+          st = conn.prepareStatement("SELECT name FROM table where name=?"); // Set each parameters value by  
+          the index (starting from 1) st.setString(1, userInput); // Execute query and get the result set     
+          ResultSet rs = st.executeQuery(); // Iterate over results while (rs.next()) {     // Get result for 
+          this row at the provided column number (starting from 1)     String result = rs.getString(1);     //
+          ... } // Close the ResultSet rs.close(); // Close the PreparedStatement st.close(); ```             
+                                                                                                              
+          For more information on SQL Injection see OWASP:                                                    
+          https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html            
+          Details: https://sg.run/0WpJ                                                                        
+                                                                                                              
+           31┆ String query = "SELECT * FROM users WHERE username = '" + userInput + "'";
+           32┆ ResultSet rs = stmt.executeQuery(query);
+   
+    ❯❱ gitlab.find_sec_bugs.CUSTOM_INJECTION-2
+          The method identified is susceptible to injection. The input should be validated and properly
+          escaped.                                                                                     
+          Details: https://sg.run/KyG6                                                                 
+                                                                                                       
+           31┆ String query = "SELECT * FROM users WHERE username = '" + userInput + "'";
+            ⋮┆----------------------------------------
+           31┆ String query = "SELECT * FROM users WHERE username = '" + userInput + "'";
+   
+   ❯❯❱ gitlab.find_sec_bugs.SQL_INJECTION_SPRING_JDBC-1.SQL_INJECTION_JPA-1.SQL_INJECTION_JDO-1.SQL_INJECTION_JDBC-
+       1.SQL_NONCONSTANT_STRING_PASSED_TO_EXECUTE-1                                                                
+          The input values included in SQL queries need to be passed in safely. Bind variables in prepared
+          statements can be used to easily mitigate the risk of SQL injection.                            
+          Details: https://sg.run/WD1A                                                                    
+                                                                                                          
+           32┆ ResultSet rs = stmt.executeQuery(query);
+   
+   ❯❯❱ gitlab.find_sec_bugs.SQL_INJECTION_SPRING_JDBC-1.SQL_INJECTION_JPA-1.SQL_INJECTION_JDO-1.SQL_INJECTION_JDBC-
+       1.SQL_NONCONSTANT_STRING_PASSED_TO_EXECUTE-1.SQL_INJECTION-1.SQL_INJECTION_HIBERNATE-                       
+       1.SQL_INJECTION_VERTX-1.SQL_PREPARED_STATEMENT_GENERATED_FROM_NONCONSTANT_STRING-1                          
+          SQL Injection is a critical vulnerability that can lead to data or system compromise. By dynamically
+          generating SQL query strings, user input may be able to influence the logic of the SQL statement.   
+          This could lead to an adversary accessing information they should not have access to, or in some    
+          circumstances, being able to execute OS functionality or code.                                      
+                                                                                                              
+          Replace all dynamically generated SQL queries with parameterized queries. In situations where       
+          dynamic queries must be created, never use direct user input, but instead use a map or dictionary of
+          valid values and resolve them using a user supplied key.                                            
+                                                                                                              
+          For example, some database drivers do not allow parameterized queries for `>` or `<` comparison     
+          operators. In these cases, do not use a user supplied `>` or `<` value, but rather have the user    
+          supply a `gt` or `lt` value. The alphabetical values are then used to look up the `>` and `<` values
+          to be used in the construction of the dynamic query. The same goes for other queries where column or
+          table names are required but cannot be parameterized.                                               
+                                                                                                              
+          Example using `PreparedStatement` queries: ``` // Some userInput String userInput = "someUserInput";
+          // Your connection string String url = "..."; // Get a connection from the DB via the DriverManager 
+          Connection conn = DriverManager.getConnection(url); // Create a prepared statement PreparedStatement
+          st = conn.prepareStatement("SELECT name FROM table where name=?"); // Set each parameters value by  
+          the index (starting from 1) st.setString(1, userInput); // Execute query and get the result set     
+          ResultSet rs = st.executeQuery(); // Iterate over results while (rs.next()) {     // Get result for 
+          this row at the provided column number (starting from 1)     String result = rs.getString(1);     //
+          ... } // Close the ResultSet rs.close(); // Close the PreparedStatement st.close(); ```             
+                                                                                                              
+          For more information on SQL Injection see OWASP:                                                    
+          https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html            
+          Details: https://sg.run/W9PA                                                                        
+                                                                                                              
+           32┆ ResultSet rs = stmt.executeQuery(query);
+   
+   ❯❯❱ java.lang.security.audit.formatted-sql-string.formatted-sql-string
+          Detected a formatted string in a SQL statement. This could lead to SQL injection if variables in the
+          SQL statement are not properly sanitized. Use a prepared statements (java.sql.PreparedStatement)    
+          instead. You can obtain a PreparedStatement using 'connection.prepareStatement'.                    
+          Details: https://sg.run/OPXp                                                                        
+                                                                                                              
+           32┆ ResultSet rs = stmt.executeQuery(query);
+    
+    
+          Taint comes from:
+    
+           31┆ String query = "SELECT * FROM users WHERE username = '" + userInput + "'";
+    
+    
+          Taint flows through these intermediate variables:
+    
+           31┆ String query = "SELECT * FROM users WHERE username = '" + userInput + "'";
+    
+    
+                This is how taint reaches the sink:
+    
+           32┆ ResultSet rs = stmt.executeQuery(query);
+    
+    
+            ⋮┆----------------------------------------
+   
+    ❯❱ java.lang.security.audit.sqli.jdbc-sqli.jdbc-sqli
+          Detected a formatted string in a SQL statement. This could lead to SQL injection if variables in the
+          SQL statement are not properly sanitized. Use a prepared statements (java.sql.PreparedStatement)    
+          instead. You can obtain a PreparedStatement using 'connection.prepareStatement'.                    
+          Details: https://sg.run/AvkL                                                                        
+                                                                                                              
+           32┆ ResultSet rs = stmt.executeQuery(query);
+   
+    ❯❱ java.lang.security.audit.active-debug-code-printstacktrace.active-debug-code-printstacktrace
+          Possible active debug code detected. Deploying an application with debug code can create unintended
+          entry points or expose sensitive information.                                                      
+          Details: https://sg.run/4K8z                                                                       
+                                                                                                             
+           44┆ e.printStackTrace();
+   
+    ❯❱ gitlab.find_sec_bugs.HARD_CODE_KEY-2
+          Cryptographic keys should not be kept in the source code. The source code can be widely shared in an
+          enterprise environment, and is certainly shared in open source. To be managed safely, passwords and 
+          secret keys should be stored in separate configuration files or keystores.                          
+          Details: https://sg.run/obGN                                                                        
+                                                                                                              
+           50┆ String azureStorageKey = "qPFPcOKhZ0gF93nRfZf5krVXvFXKpNGCu/mUZnMY4QnR+aKBLzsyCA==";
+   
+    ❯❱ java.lang.security.audit.active-debug-code-printstacktrace.active-debug-code-printstacktrace
+          Possible active debug code detected. Deploying an application with debug code can create unintended
+          entry points or expose sensitive information.                                                      
+          Details: https://sg.run/4K8z                                                                       
+                                                                                                             
+           62┆ e.printStackTrace();
+                                              
+    src/main/java/org/example/secretsDemo.java
+    ❯❱ gitlab.find_sec_bugs.HARD_CODE_KEY-2
+          Cryptographic keys should not be kept in the source code. The source code can be widely shared in an
+          enterprise environment, and is certainly shared in open source. To be managed safely, passwords and 
+          secret keys should be stored in separate configuration files or keystores.                          
+          Details: https://sg.run/obGN                                                                        
+                                                                                                              
+            6┆ String awsAccessKeyId = "AKIA5NH7L4P3KJ2U9D3N";
+   
+   ❯❯❱ generic.secrets.security.detected-aws-access-key-id-value.detected-aws-access-key-id-value
+          AWS Access Key ID Value detected. This is a sensitive credential and should not be hardcoded here.
+          Instead, read this value from an environment variable or keep it in a separate, private file.     
+          Details: https://sg.run/GeD1                                                                      
+                                                                                                            
+            6┆ String awsAccessKeyId = "AKIA5NH7L4P3KJ2U9D3N";
+   
+    ❯❱ gitlab.find_sec_bugs.HARD_CODE_KEY-2
+          Cryptographic keys should not be kept in the source code. The source code can be widely shared in an
+          enterprise environment, and is certainly shared in open source. To be managed safely, passwords and 
+          secret keys should be stored in separate configuration files or keystores.                          
+          Details: https://sg.run/obGN                                                                        
+                                                                                                              
+            7┆ String awsSecretKey = "N7k58Gv+WbqUVsRiZcKZpu7FmAIfs8WlYuU5U9XL";
+   
+   ❯❯❱ generic.secrets.security.detected-aws-secret-access-key.detected-aws-secret-access-key
+          AWS Secret Access Key detected
+          Details: https://sg.run/Bk39  
+                                        
+            7┆ String awsSecretKey = "N7k58Gv+WbqUVsRiZcKZpu7FmAIfs8WlYuU5U9XL";
+   
+   ❯❯❱ generic.secrets.security.detected-slack-token.detected-slack-token
+          Slack Token detected        
+          Details: https://sg.run/kXdz
+                                      
+           15┆ String slackBotToken = "xoxb-875392083274-987654321098-zD47HhU0LvIUGY6oDsP7hVJf";
+   
+    ❯❱ gitlab.find_sec_bugs.HARD_CODE_KEY-2
+          Cryptographic keys should not be kept in the source code. The source code can be widely shared in an
+          enterprise environment, and is certainly shared in open source. To be managed safely, passwords and 
+          secret keys should be stored in separate configuration files or keystores.                          
+          Details: https://sg.run/obGN                                                                        
+                                                                                                              
+           22┆ String firebaseServerKey = "AAAAjKo9EXw:APA91bGT8PX5g7Vl3m_3hwPnF03mZqFik_P8F9xdm3V";
+            ⋮┆----------------------------------------
+           24┆ String shopifyAppPassword = "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";
+            ⋮┆----------------------------------------
+           26┆ String googleClientSecret = "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";
+            ⋮┆----------------------------------------
+           28┆ String fbAppSecret = "e843ff7de8583c3c1d29c1de473c66a7";
+   
+   ❯❯❱ generic.secrets.security.detected-generic-secret.detected-generic-secret
+          Generic Secret detected     
+          Details: https://sg.run/l2o5
+                                      
+           28┆ String fbAppSecret = "e843ff7de8583c3c1d29c1de473c66a7";
+   
+    ❯❱ gitlab.find_sec_bugs.HARD_CODE_KEY-2
+          Cryptographic keys should not be kept in the source code. The source code can be widely shared in an
+          enterprise environment, and is certainly shared in open source. To be managed safely, passwords and 
+          secret keys should be stored in separate configuration files or keystores.                          
+          Details: https://sg.run/obGN                                                                        
+                                                                                                              
+           30┆ String azureStorageKey = "qPFPcOKhZ0gF93nRfZf5krVXvFXKpNGCu/mUZnMY4QnR+aKBLzsyCA==";
+            ⋮┆----------------------------------------
+           32┆ String stripeSecretKey = "sk_live_51KwE4MDISaZs1IjAJC5w8Y7JvWxz63LzWaHOXxZlWlM8OgQ";
+   
+   ❯❯❱ generic.secrets.security.detected-stripe-api-key.detected-stripe-api-key
+          Stripe API Key detected     
+          Details: https://sg.run/dKd5
+                                      
+           32┆ String stripeSecretKey = "sk_live_51KwE4MDISaZs1IjAJC5w8Y7JvWxz63LzWaHOXxZlWlM8OgQ";
+   
+    ❯❱ gitlab.find_sec_bugs.HARD_CODE_KEY-2
+          Cryptographic keys should not be kept in the source code. The source code can be widely shared in an
+          enterprise environment, and is certainly shared in open source. To be managed safely, passwords and 
+          secret keys should be stored in separate configuration files or keystores.                          
+          Details: https://sg.run/obGN                                                                        
+                                                                                                              
+           40┆ String mysqlPassword = "Jj82!gL!2vBc#3Nm";
+            ⋮┆----------------------------------------
+           41┆ String dbRootPassword = "3u8Gx9h$TfZmNpQ0";
+            ⋮┆----------------------------------------
+           42┆ String ldapPassword = "v7Rt!dTgL4$wE12Y";
+            ⋮┆----------------------------------------
+           45┆ String mailgunApiKey = "key-25gtsnd0abctyueklfw4zvu9dr3uaylx";
+   
+   ❯❯❱ generic.secrets.security.detected-mailgun-api-key.detected-mailgun-api-key
+          Mailgun API Key detected    
+          Details: https://sg.run/jRL2
+                                      
+           45┆ String mailgunApiKey = "key-25gtsnd0abctyueklfw4zvu9dr3uaylx";
+   
+    ❯❱ gitlab.find_sec_bugs.HARD_CODE_KEY-2
+          Cryptographic keys should not be kept in the source code. The source code can be widely shared in an
+          enterprise environment, and is certainly shared in open source. To be managed safely, passwords and 
+          secret keys should be stored in separate configuration files or keystores.                          
+          Details: https://sg.run/obGN                                                                        
+                                                                                                              
+           46┆ String mailgunApiKey2 = "key-25gtsnd0abctyueklfw4zvu9dr3uaylx";
+   
+   ❯❯❱ generic.secrets.security.detected-mailgun-api-key.detected-mailgun-api-key
+          Mailgun API Key detected    
+          Details: https://sg.run/jRL2
+                                      
+           46┆ String mailgunApiKey2 = "key-25gtsnd0abctyueklfw4zvu9dr3uaylx";
+   
+    ❯❱ gitlab.find_sec_bugs.HARD_CODE_KEY-2
+          Cryptographic keys should not be kept in the source code. The source code can be widely shared in an
+          enterprise environment, and is certainly shared in open source. To be managed safely, passwords and 
+          secret keys should be stored in separate configuration files or keystores.                          
+          Details: https://sg.run/obGN                                                                        
+                                                                                                              
+           52┆ String herokuApiKey = "8b4eaf31-9a3e-4d5a-a7e1-024f37ad7dc2";
+   
+   ❯❯❱ generic.secrets.security.detected-heroku-api-key.detected-heroku-api-key
+          Heroku API Key detected     
+          Details: https://sg.run/pxXR
+                                      
+           52┆ String herokuApiKey = "8b4eaf31-9a3e-4d5a-a7e1-024f37ad7dc2";
+   
+    ❯❱ gitlab.find_sec_bugs.HARD_CODE_KEY-2
+          Cryptographic keys should not be kept in the source code. The source code can be widely shared in an
+          enterprise environment, and is certainly shared in open source. To be managed safely, passwords and 
+          secret keys should be stored in separate configuration files or keystores.                          
+          Details: https://sg.run/obGN                                                                        
+                                                                                                              
+           55┆ String jwtSecret = "P8Lm9uQ93YzFz6Ar@#5cLKMnf8!JHbdE6vZ4UPpTfL";
+            ⋮┆----------------------------------------
+           69┆ String encryptionKey = "eC1dA3FgG7JkP9LrT1VzX5c7eF9hN1q3";
+            ⋮┆----------------------------------------
+           72┆ String base64Secret = "bXlTdXBlclNlY3JldEtleTIwMjU="; // base64 of 'mySuperSecretKey2025'
+                               
+                               
+┌─────────────────────────────┐
+│ 14 Invalid Secrets Findings │
+└─────────────────────────────┘
+                                            
+    src/main/java/org/example/GitHubApi.java
+   ❯❯❱ secrets.services.github_pat.github_pat
+          To revoke the token, visit the `Active tokens` page in the organization settings screen: `https://  
+          github.com/organizations/<ORG>/settings/personal-access-tokens/active`. From here, select the token,
+          and revoke it using the drop down field and selecting `"Revoke"`.                                   
+          Details: https://semgrep.dev/orgs/-/editor/r/b5nv                                                   
+                                                                                                              
+            7┆ String token = "****1A2b3C4d5E6f7G8h9I0jKlMnOpQrStUvWxYz";
+            ⋮┆----------------------------------------
+            7┆ String token = "ghp_1A2b********************************";
+                                              
+    src/main/java/org/example/secretsDemo.java
+   ❯❯❱ secrets.services.aws_secret.aws-secret
+          A secret is hard-coded in the application. Secrets stored in source code, such as credentials,     
+          identifiers, and other types of sensitive data, can be leaked and used by internal or external     
+          malicious actors. It is recommended to rotate the secret and retrieve them from a secure secret    
+          vault or Hardware Security Module (HSM), alternatively environment variables can be used if allowed
+          by your company policy.                                                                            
+          Details: https://semgrep.dev/orgs/-/editor/r/n6YZ                                                  
+                                                                                                             
+            6┆ String awsAccessKeyId = "AKIA****************";
+   
+   ❯❯❱ secrets.services.github_pat.github_pat
+          To revoke the token, visit the `Active tokens` page in the organization settings screen: `https://  
+          github.com/organizations/<ORG>/settings/personal-access-tokens/active`. From here, select the token,
+          and revoke it using the drop down field and selecting `"Revoke"`.                                   
+          Details: https://semgrep.dev/orgs/-/editor/r/b5nv                                                   
+                                                                                                              
+            9┆ String githubToken = "****D8fR2sY9ABQpGgW2S3xF4dVYZkNpWqz57TbR";
+            ⋮┆----------------------------------------
+            9┆ String githubToken = "ghp_D8fR********************************";
+            ⋮┆----------------------------------------
+           10┆ String githubToken44 = "****D8fR2sY9ABQpGgW2S3xF4dVYZkNpWqz57TbR";
+            ⋮┆----------------------------------------
+           10┆ String githubToken44 = "ghp_D8fR********************************";
+   
+   ❯❯❱ secrets.services.gitlabv2.gitlabv2
+          A secret is hard-coded in the application. Secrets stored in source code, such as credentials,     
+          identifiers, and other types of sensitive data, can be leaked and used by internal or external     
+          malicious actors. It is recommended to rotate the secret and retrieve them from a secure secret    
+          vault or Hardware Security Module (HSM), alternatively environment variables can be used if allowed
+          by your company policy.                                                                            
+          Details: https://semgrep.dev/orgs/-/editor/r/x3py                                                  
+                                                                                                             
+           12┆ String gitlabToken = "g*****28eFqsNLmXKJxuPbaYBZ";
+            ⋮┆----------------------------------------
+           12┆ String gitlabToken = "glpat*********************";
+            ⋮┆----------------------------------------
+           13┆ String gitlabToken2 = "g*****28eFqsNLmXKJxuPbaYBZ";
+            ⋮┆----------------------------------------
+           13┆ String gitlabToken2 = "glpat*********************";
+   
+   ❯❯❱ secrets.services.slack_bot_token.slack-bot-token
+          A secret is hard-coded in the application. Secrets stored in source code, such as credentials,     
+          identifiers, and other types of sensitive data, can be leaked and used by internal or external     
+          malicious actors. It is recommended to rotate the secret and retrieve them from a secure secret    
+          vault or Hardware Security Module (HSM), alternatively environment variables can be used if allowed
+          by your company policy.                                                                            
+          Details: https://semgrep.dev/orgs/-/editor/r/eAzL                                                  
+                                                                                                             
+           15┆ String slackBotToken = "xoxb-875392********************************************";
+   
+   ❯❯❱ secrets.services.stripe.stripe
+          A secret is hard-coded in the application. Secrets stored in source code, such as credentials,     
+          identifiers, and other types of sensitive data, can be leaked and used by internal or external     
+          malicious actors. It is recommended to rotate the secret and retrieve them from a secure secret    
+          vault or Hardware Security Module (HSM), alternatively environment variables can be used if allowed
+          by your company policy.                                                                            
+          Details: https://semgrep.dev/orgs/-/editor/r/Lo6Y                                                  
+                                                                                                             
+           32┆ String stripeSecretKey = "sk_live_51K*********************************************";
+   
+   ❯❯❱ secrets.services.heroku.heroku
+          A secret is hard-coded in the application. Secrets stored in source code, such as credentials,     
+          identifiers, and other types of sensitive data, can be leaked and used by internal or external     
+          malicious actors. It is recommended to rotate the secret and retrieve them from a secure secret    
+          vault or Hardware Security Module (HSM), alternatively environment variables can be used if allowed
+          by your company policy.                                                                            
+          Details: https://semgrep.dev/orgs/-/editor/r/7364                                                  
+                                                                                                             
+           52┆ String herokuApiKey = "8b4eaf3*****************************";
+
