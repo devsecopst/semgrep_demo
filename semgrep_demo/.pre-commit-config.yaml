@@ -2,18 +2,21 @@ repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v2.3.0
     hooks:
-      -   id: check-yaml
-      -   id: end-of-file-fixer
-      -   id: trailing-whitespace
-  -   repo: https://github.com/psf/black
-      rev: 22.10.0
-      hooks:
-        -   id: black
+      - id: check-yaml
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+
+  - repo: https://github.com/psf/black
+    rev: 22.10.0
+    hooks:
+      - id: black
+
   - repo: local
     hooks:
       - id: semgrep-warn-only
         name: Semgrep Warn-Only
         entry: bash /Users/emran/semgrep_demo/semgrep_demo/semgrep-warn-only.sh
         language: system
+        stages: [push]  # ← changed to pre-push as per your goal
         pass_filenames: true
         verbose: true
