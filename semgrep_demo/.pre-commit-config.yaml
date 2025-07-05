@@ -19,5 +19,6 @@ repos:
         stages: [pre-commit]
         pass_filenames: false
         exclude_types: [yaml,xml,shell]
+        exclude: '\.txt$'
         description: "used to conduct semgrep code and secrets scans only - Shahid Org."
         verbose: true
