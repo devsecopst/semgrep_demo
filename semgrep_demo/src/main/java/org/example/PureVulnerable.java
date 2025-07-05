@@ -36,7 +36,7 @@ public class PureVulnerable {
                 System.out.println(line);
             }
         } else {
-            System.out.println("File not found.");
+            System.out.println("File  not found.");
         }
         // 🔥 4. Hardcoded Credentials (optional)
         String username = "admin";
