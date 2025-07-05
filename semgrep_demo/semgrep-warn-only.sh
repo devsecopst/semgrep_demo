@@ -18,6 +18,6 @@ fi
 echo "🔍 Running Semgrep scan (warn-only)..."
 #one time execution.
 semgrep login 1>/dev/null
-semgrep ci --code --secrets $staged_Files
+semgrep ci --code --secrets --include $staged_Files
 echo -e "\n${GREEN}✔️Semgrep security code scan completed.\n\r${NC} ${RED}📄 For any questions or concerns, please contact the Security Team.${NC}"
 exit 0
