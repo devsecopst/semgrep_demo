@@ -19,4 +19,5 @@ repos:
         stages: [pre-commit]  # ← changed to pre-push as per your goal
         pass_filenames: false
         exclude_types: [file]
+        description: "used to conduct semgrep scanning only."
         verbose: true
