@@ -2,7 +2,7 @@
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 NC='\033[0m' # No Color
-SEMGREP_REPO_URL=local://my-local-project
+export SEMGREP_REPO_URL=local://my-local-project
 #get Staged files.
 staged_Files=$(git diff --cached  --name-only --diff-filter=ACM)
 echo -e "scan against:$staged_Files"
