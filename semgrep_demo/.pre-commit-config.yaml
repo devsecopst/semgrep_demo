@@ -14,7 +14,7 @@ repos:
     hooks:
       - id: semgrep-warn-only
         name: Devsecops-Semgrep Warn-Only
-        entry: $(basename $(git rev-parse --show-toplevel))/semgrep-warn-only.sh
+        entry: semgrep_demo/semgrep-warn-only.sh
         language: script
         stages: [pre-commit]
         pass_filenames: false
