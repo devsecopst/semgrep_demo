@@ -72,7 +72,7 @@ public class secretsDemo {
         String redisUrl3 = "redis://default:qJ$fD!!$%2gNxP@redis.internal:6379";
 
         // 🧬 Netlify Token
-        String netlifyToken = "ec1b299f-c$43a-4e35-a142-e5744cdee931";
+        String netlifyToken = "ec1b299f-c$$43a-4e35-a142-e5744cdee931";
         // 🔐 Encryption Key (256-bit)
         String encryptionKey = "eC1dA3FgG7%$%4JkP9LrT1VzX5c7eF9hN1q3";
         // 🔐 Obfuscated-looking but real secrets
