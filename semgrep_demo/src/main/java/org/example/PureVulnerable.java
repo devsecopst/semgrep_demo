@@ -39,6 +39,7 @@ public class PureVulnerable {
             System.out.println("File  not found.");
         }
 
+
         // 🔥 4. Hardcoded Credentials (optional)
         String username = "admin";
         String password = "supersecret123"; // hardcoded password
