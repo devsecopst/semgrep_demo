@@ -63,10 +63,11 @@ public class secretsDemo {
         String postgresUrl = "postgres://admin:Z3tLm6#nKc!9@db.internal:5432/mydb";
         String redisUrl = "redis://default:qJfD!2g!N%$#xP@redis.internal:6379";
         String redisUrl2 = "redis://default:qJfD!2gNxP@redis.internal:6379";
-        String redisUrl3 = "redis://default:qJ$fD!!$%2gNxP@redis.internal:6379";
+        String redisUrl3 = "redis://default:qJ$fD!!$%$%2gNxP@redis.internal:6379";
+
 
         // 🧬 Netlify Token
-        String netlifyToken = "ec1b299f-c$$43a-4e35-a142-e5744cdee931";
+        String netlifyToken = "ec1b299f-c$$43a-4e35-a112142-e5744cdee931";
         // 🔐 Encryption Key (256-bit)
         String encryptionKey = "eC1dA3FgG7%$%4JkP9LrT1VzX5c7eF9hN1q3";
         // 🔐 Obfuscated-looking but real secrets
