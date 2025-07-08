@@ -30,12 +30,8 @@ public class secretsDemo {
         String azureStorageKey = "qPFPcOKhZ0gF93nRfZf5krVXvFXKpNGCu/mUZnMY4QnR+aKBLzsyCA==";
         // 🔐 Stripe Secret Key
         String stripeSecretKey = "sk_live_51KwE4MDISaZs1IjAJC5w8Y7JvWxz63LzWaHOXxZlWlM8OgQ";
-
-
         // 🪪 Basic Auth Header
         String basicAuth = "Authorization: Basic YWRtaW46c2VjcmV0UGFzcw==";
-
-
         // 🔐 Hardcoded passwords
         String mysqlPassword = "Jj82!gL!2vBc#3Nm";
         String dbRootPassword = "3u8Gx9h$TfZmNpQ0";
@@ -62,8 +58,6 @@ public class secretsDemo {
 
         // 🔑 JWT Secrets
         String jwtSecret = "P8Lm9uQ93$^%$#!)(*&^$&^%$Yz$#$$Fz6Ar@#5cLKMnf8!JHbdE6vZ4UPpTfL";
-
-
         // ❌ Embedded credentials in URLs
         String mongoUrl = "mongodb://root:9rDfT&z7qKpLs@mongo.internal:27017/admin";
         String postgresUrl = "postgres://admin:Z3tLm6#nKc!9@db.internal:5432/mydb";
