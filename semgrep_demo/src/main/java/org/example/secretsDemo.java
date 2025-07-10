@@ -37,15 +37,6 @@ public class secretsDemo {
         String dbRootPassword = "3u8Gx9h$TfZmNpQ0";
         String ldapPassword = "v7Rt!dTgL4$wE12Y";
 
-
-
-
-
-
-
-
-
-
         // 🧬 Mailgun API Key
         String mailgunApiKey = "key-25gtsnd0abctyueklfw4zvu9dr3uaylx";
         String mailgunApiKey2 = "key-25gtsnd0abctyueklfw4zvu9dr3uaylx";
@@ -56,18 +47,20 @@ public class secretsDemo {
         // 🧬 Heroku API Key
         String herokuApiKey = "8b4eaf31-$9a3e-4d5a-a7e1-024f37ad7dc2";
 
+
+
         // 🔑 JWT Secrets
         String jwtSecret = "P8Lm9uQ93$^%$#!)(*&^$&^%$Yz$#$$Fz6Ar@#5cLKMnf8!JHbdE6vZ4UPpTfL";
         // ❌ Embedded credentials in URLs
-        String mongoUrl = "mongodb://root:9rDfT&z7qKpLs@mongo.internal:27017/admin";
+        String mongoUrl = "mongodb://root:9rDfT&$z7qKpLs@mongo.internal:27017/admin";
         String postgresUrl = "postgres://admin:Z3tLm6#nKc!9@db.internal:5432/mydb";
         String redisUrl = "redis://default:qJfD!2g!N%$#xP@redis.internal:6379";
-        String redisUrl2 = "redis://default:qJfD!2gNxP@redis.internal:6379";
-        String redisUrl3 = "redis://default:qJ$fD!!$%$%2gNxP@redis.internal:6379";
+        String redisUrl2 = "redis://default:qJfD!2gN%%5xP@redis.internal:6379";
+        String redisUrl3 = "redis://default:qJ$fD!!$^%%$%2gNxP@redis.internal:6379";
 
 
         // 🧬 Netlify Token
-        String netlifyToken = "ec1b299f-c$$43a-4e35-a112142-e5744cdee931";
+        String netlifyToken = "ec1b299f-c$$$$43a-4e35-a112142-e5744cdee931";
         // 🔐 Encryption Key (256-bit)
         String encryptionKey = "eC1dA3FgG7%$%4JkP9LrT1VzX5c7eF9hN1q3";
         // 🔐 Obfuscated-looking but real secrets

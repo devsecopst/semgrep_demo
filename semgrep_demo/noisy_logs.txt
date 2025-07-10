@@ -1,0 +1,1037 @@
+
+
+┌────────────────────────────────────┐
+│ 20 Reachable Supply Chain Findings │
+└────────────────────────────────────┘
+
+  [36m[22m[24m  pom.xml[0m
+   ❯❯❱ org.apache.tomcat.embed:tomcat-embed-core - CVE-2024-34750
+          Severity: [1m[24mHIGH[0m
+          Affected versions of org.apache.tomcat.embed:tomcat-embed-core and org.apache.tomcat:tomcat-coyote
+          are vulnerable to Improper Handling of Exceptional Conditions / Uncontrolled Resource Consumption.
+
+  [32m[22m[24m         ▶▶┆ Fixed for org.apache.tomcat.embed:tomcat-embed-core at versions: 10.1.25, 11.0.0-M21,
+  9.0.90[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+   ❯❯❱ org.apache.tomcat.embed:tomcat-embed-core - CVE-2025-24813
+          Severity: [1m[24mCRITICAL[0m
+          Affected versions of org.apache.tomcat.embed:tomcat-embed-core and org.apache.tomcat:tomcat-catalina
+          are vulnerable to Deserialization of Untrusted Data / Path Equivalence. This can lead to Remote Code
+          Execution and/or Information disclosure and/or malicious content added to uploaded files via write
+          enabled Default Servlet in Apache Tomcat.
+
+  [32m[22m[24m         ▶▶┆ Fixed for org.apache.tomcat.embed:tomcat-embed-core at versions: 10.1.35, 11.0.3, 9.0.99[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+   ❯❯❱ org.apache.tomcat.embed:tomcat-embed-core - CVE-2024-56337
+          Severity: [1m[24mHIGH[0m
+          Affected versions of org.apache.tomcat.embed:tomcat-embed-core, org.apache.tomcat:tomcat- catalina,
+          and org.apache.tomcat:tomcat-embed-core are vulnerable to Time-of-check Time-of-use (TOCTOU) Race
+          Condition. Apache Tomcat is susceptible to a TOCTOU race condition vulnerability. This occurs when
+          running on a case insensitive file system with the default servlet write enabled, potentially
+          allowing attackers to exploit misconfiguration or race conditions if the system property
+          `sun.io.useCanonCaches` is not correctly set. Specific mitigations are necessary based on the Java
+          version used, and failure to implement these could lead to unauthorized file writes or other
+          security risks.
+
+  [32m[22m[24m         ▶▶┆ Fixed for org.apache.tomcat.embed:tomcat-embed-core at versions: 10.1.34, 11.0.2, 9.0.98[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+   ❯❯❱ org.apache.tomcat.embed:tomcat-embed-core - CVE-2024-24549
+          Severity: [1m[24mMODERATE[0m
+          Affected versions of org.apache.tomcat.embed:tomcat-embed-core and org.apache.tomcat:tomcat are
+          vulnerable to Improper Input Validation. The vulnerability in Apache Tomcat involves a Denial of
+          Service due to improper input validation in HTTP/2 requests, where if the request surpasses
+          configured header limits, the corresponding HTTP/2 stream remains unreset until after all headers
+          have been processed.
+
+  [32m[22m[24m         ▶▶┆ Fixed for org.apache.tomcat.embed:tomcat-embed-core at versions: 10.1.19, 11.0.0-M17, 8.5.99,
+  9.0.86[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+   ❯❯❱ com.fasterxml.jackson.core:jackson-databind - CVE-2019-17267
+          Severity: [1m[24mCRITICAL[0m
+          com.fasterxml.jackson.core:jackson-databind versions before 2.9.10 are vulnerable to Deserialization
+          Of Untrusted Data. The vulnerability is a security concern that arises when a software component,
+          such as a library or framework, allows for the dynamic handling of different data types and objects,
+          often during serialization and deserialization processes
+
+  [32m[22m[24m         ▶▶┆ Fixed for com.fasterxml.jackson.core:jackson-databind at versions: 2.8.11.5, 2.9.10[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+   ❯❯❱ com.fasterxml.jackson.core:jackson-databind - CVE-2020-9546
+          Severity: [1m[24mCRITICAL[0m
+          Affected version of com.fasterxml.jackson.core:jackson-databind is vulnerable to Deserialization Of
+          Untrusted Data. The vulnerability involves mishandling the interaction between serialization gadgets
+          and typing, specifically in relation to `org.apache.hadoop.shaded.com.zaxxer.hikari.HikariConfig`
+
+  [32m[22m[24m         ▶▶┆ Fixed for com.fasterxml.jackson.core:jackson-databind at version: 2.9.10.4[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+   ❯❯❱ commons-collections:commons-collections - CVE-2015-7501
+          Severity: [1m[24mCRITICAL[0m
+          Affected versions of org.apache.commons:commons-collections4 4.x before 4.1 and commons-
+          collections:commons-collections 3.x before 3.2.2 are vulnerable to Deserialization Of Untrusted
+          Data. The vulnerability allows remote attackers to execute arbitrary code with the permissions of
+          the application by exploiting a flaw in object deserialization involving a specially crafted chain
+          of classes.
+
+  [32m[22m[24m         ▶▶┆ Fixed for commons-collections:commons-collections at version: 3.2.2[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+   ❯❯❱ com.fasterxml.jackson.core:jackson-databind - CVE-2020-9547
+          Severity: [1m[24mCRITICAL[0m
+          com.fasterxml.jackson.core:jackson-databind versions >= 2.0.0 before and including 2.9.10.3 are
+          vulnerable to Deserialization Of Untrusted Data. This occurs due to the mishandling of interaction
+          between serialization gadgets and typing classes related to ibatis-sqlmap.
+
+  [32m[22m[24m         ▶▶┆ Fixed for com.fasterxml.jackson.core:jackson-databind at versions: 2.7.9.7, 2.8.11.6,
+  2.9.10.4[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+   ❯❯❱ com.fasterxml.jackson.core:jackson-databind - CVE-2019-14379
+          Severity: [1m[24mCRITICAL[0m
+          Affected versions of com.fasterxml.jackson.core:jackson-databind 2.7.x before 2.7.9.6,
+          com.fasterxml.jackson.core:jackson-databind 2.8.x before 2.8.11.4, and
+          com.fasterxml.jackson.core:jackson-databind 2.9.x before 2.9.9.2 are vulnerable to Improperly
+          Controlled Modification Of Dynamically-Determined Object Attributes / Improperly Controlled
+          Modification Of Object Prototype Attributes ('Prototype Pollution'). The vulnerability in
+          SubTypeValidator.java mishandles default typing when ehcache is employed , resulting in the
+          potential for remote code execution.
+
+  [32m[22m[24m         ▶▶┆ Fixed for com.fasterxml.jackson.core:jackson-databind at versions: 2.7.9.6, 2.8.11.4,
+  2.9.9.2[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+   ❯❯❱ org.springframework:spring-web - CVE-2016-1000027
+          Severity: [1m[24mCRITICAL[0m
+          org.springframework:spring-web versions before 6.0.0 are vulnerable to Deserialization Of Untrusted
+          Data. The `readRemoteInvocation` method in `HttpInvokerServiceExporter.class` doesn't properly
+          validate untrusted objects prior to deserialization. An attacker can exploit this by sending
+          malicious requests with crafted objects, leading to arbitrary code execution on the vulnerable
+          system.
+
+  [32m[22m[24m         ▶▶┆ Fixed for org.springframework:spring-web at version: 6.0.0[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+   ❯❯❱ com.fasterxml.jackson.core:jackson-databind - CVE-2019-14540
+          Severity: [1m[24mCRITICAL[0m
+          com.fasterxml.jackson.core:jackson-databind versions before 2.9.10 are vulnerable to Deserialization
+          Of Untrusted Data. This occurs due to a polymorphic typing issue related to
+          com.zaxxer.hikari.HikariConfig.
+
+  [32m[22m[24m         ▶▶┆ Fixed for com.fasterxml.jackson.core:jackson-databind at versions: 2.6.7.3, 2.8.11.5,
+  2.9.10[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+   ❯❯❱ com.fasterxml.jackson.core:jackson-databind - CVE-2019-16335
+          Severity: [1m[24mCRITICAL[0m
+          com.fasterxml.jackson.core:jackson-databind versions before 2.9.10 are vulnerable to Deserialization
+          Of Untrusted Data. This occurs due to a polymorphic typing issue related to
+          com.zaxxer.hikari.HikariDataSource.
+
+  [32m[22m[24m         ▶▶┆ Fixed for com.fasterxml.jackson.core:jackson-databind at versions: 2.6.7.3, 2.8.11.5,
+  2.9.10[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+   ❯❯❱ com.fasterxml.jackson.core:jackson-databind - CVE-2019-17531
+          Severity: [1m[24mCRITICAL[0m
+          com.fasterxml.jackson.core:jackson-databind versions before and including 2.9.10.0 are vulnerable to
+          Deserialization Of Untrusted Data. A Polymorphic Typing vulnerability has been identified in
+          FasterXML jackson-databind library. When Default Typing is enabled for a JSON endpoint exposed to
+          external sources and the classpath includes apache-log4j-extra, an attacker able to provide a JNDI
+          service might exploit this to execute malicious code.
+
+  [32m[22m[24m         ▶▶┆ Fixed for com.fasterxml.jackson.core:jackson-databind at versions: 2.6.7.3, 2.8.11.5,
+  2.9.10.1[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+   ❯❯❱ com.fasterxml.jackson.core:jackson-databind - CVE-2020-8840
+          Severity: [1m[24mCRITICAL[0m
+          Affected versions of com.fasterxml.jackson.core:jackson-databind are vulnerable to Deserialization
+          Of Untrusted Data. FasterXML jackson-databind lacks certain xbean-reflect/JNDI blocking, as
+          demonstrated by `org.apache.xbean.propertyeditor.JndiConverter`.
+
+  [32m[22m[24m         ▶▶┆ Fixed for com.fasterxml.jackson.core:jackson-databind at versions: 2.6.7.4, 2.7.9.7,
+  2.8.11.5, 2.9.10.3[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+   ❯❯❱ com.fasterxml.jackson.core:jackson-databind - CVE-2020-9548
+          Severity: [1m[24mCRITICAL[0m
+          com.fasterxml.jackson.core:jackson-databind versions >= 2.0.0 before and including 2.9.10.3 are
+          vulnerable to Deserialization Of Untrusted Data. This occurs due to the mishandling of interaction
+          between serialization gadgets and typing classes related to anteros-core.
+
+  [32m[22m[24m         ▶▶┆ Fixed for com.fasterxml.jackson.core:jackson-databind at versions: 2.7.9.7, 2.8.11.6,
+  2.9.10.4[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+   ❯❯❱ com.fasterxml.jackson.core:jackson-databind - CVE-2019-16943
+          Severity: [1m[24mCRITICAL[0m
+          Affected versions of com.fasterxml.jackson.core:jackson-databind 2.6.x before 2.6.7.3,
+          com.fasterxml.jackson.core:jackson-databind 2.8.x before 2.8.11.5, and
+          com.fasterxml.jackson.core:jackson-databind 2.9.x before 2.9.10.1 are vulnerable to Deserialization
+          Of Untrusted Data. The vulnerability involves a Polymorphic Typing issue where enabling `Default
+          Typing` for an externally exposed JSON endpoint, alongside the presence of the `p6spy jar` in the
+          classpath, allows an attacker to execute a malicious payload by exploiting the mishandling of
+          `com.p6spy.engine.spy.P6DataSource`, provided they can locate an accessible RMI service endpoint.
+
+  [32m[22m[24m         ▶▶┆ Fixed for com.fasterxml.jackson.core:jackson-databind at versions: 2.6.7.3, 2.8.11.5,
+  2.9.10.1[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+   ❯❯❱ com.fasterxml.jackson.core:jackson-databind - CVE-2019-20330
+          Severity: [1m[24mCRITICAL[0m
+          Affected versions of com.fasterxml.jackson.core:jackson-databind 2.6.x before 2.6.7.4,
+          com.fasterxml.jackson.core:jackson-databind 2.9.x before 2.9.10.2,
+          com.fasterxml.jackson.core:jackson-databind 2.8.x before 2.8.11.5, and
+          com.fasterxml.jackson.core:jackson-databind 2.7.x before 2.7.9.7 are vulnerable to Deserialization
+          Of Untrusted Data. The vulnerability poses a risk of disclosing sensitive information, unauthorized
+          data manipulation, or causing Denial of Service (DoS) when exploited successfully.
+
+  [32m[22m[24m         ▶▶┆ Fixed for com.fasterxml.jackson.core:jackson-databind at versions: 2.6.7.4, 2.7.9.7,
+  2.8.11.5, 2.9.10.2[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+   ❯❯❱ com.fasterxml.jackson.core:jackson-databind - CVE-2019-16942
+          Severity: [1m[24mCRITICAL[0m
+          Affected version of com.fasterxml.jackson.core:jackson-databind 2.x before 2.9.10.1 is vulnerable to
+          Deserialization Of Untrusted Data. The vulnerability enables Default Typing for an externally
+          exposed JSON endpoint in conjunction with the presence of the commons-dbcp jar in the classpath, and
+          an attacker's ability to locate an RMI service endpoint for access, can result in the execution of a
+          malicious payload, stemming from the mishandling of
+          `org.apache.commons.dbcp.datasources.SharedPoolDataSource` and
+          `org.apache.commons.dbcp.datasources.PerUserPoolDataSource`
+
+  [32m[22m[24m         ▶▶┆ Fixed for com.fasterxml.jackson.core:jackson-databind at versions: 2.6.7.3, 2.8.11.5,
+  2.9.10.1[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+  [36m[22m[24m  src/main/java/org/example/VulnerableService.java[0m with lockfile [36m[22m[24mpom.xml[0m
+   ❯❯❱ org.apache.logging.log4j:log4j-core - CVE-2021-44228
+          Severity: [1m[24mCRITICAL[0m
+          org.apache.logging.log4j:log4j-core >= 2.4, < 2.12.2,< 2.3.1,>= 2.13.0, < 2.15.0 are vulnerable to
+          remote code execution when logging untrusted or user controlled data.
+
+  [32m[22m[24m         ▶▶┆ Fixed for org.apache.logging.log4j:log4j-core at versions: 2.12.2, 2.15.0, 2.3.1[0m
+           69┆ logger.info("User input: " + userInput);
+
+   ❯❯❱ org.apache.logging.log4j:log4j-core - CVE-2021-45046
+          Severity: [1m[24mCRITICAL[0m
+          Affected versions of org.apache.logging.log4j:log4j-core and org.ops4j.pax.logging:pax-logging-
+          log4j2 are vulnerable to Deserialization of Untrusted Data / Improper Neutralization of Special
+          Elements used in an Expression Language Statement ('Expression Language Injection'). Caused by
+          incomplete fix to address CVE-2021-44228 in Apache Log4j 2.15.0 in certain non-default
+          configurations.
+
+  [32m[22m[24m         ▶▶┆ Fixed for org.apache.logging.log4j:log4j-core at versions: 2.12.2, 2.16.0[0m
+           69┆ logger.info("User input: " + userInput);
+
+
+┌───────────────────────────────────────┐
+│ 59 Undetermined Supply Chain Findings │
+└───────────────────────────────────────┘
+
+  [36m[22m[24m  pom.xml[0m
+    ❯❱ com.fasterxml.jackson.core:jackson-databind - CVE-2020-10969
+          Severity: [1m[24mHIGH[0m
+          Affected versions of com.fasterxml.jackson.core:jackson-databind are vulnerable to Deserialization
+          of Untrusted Data.
+
+  [32m[22m[24m         ▶▶┆ Fixed for com.fasterxml.jackson.core:jackson-databind at version: 2.9.10.4[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+    ❯❱ ch.qos.logback:logback-core - CVE-2024-12798
+          Severity: [1m[24mMODERATE[0m
+          Affected versions of ch.qos.logback:logback-core are vulnerable to Improper Neutralization of
+          Special Elements used in an Expression Language Statement ('Expression Language Injection').
+
+  [32m[22m[24m         ▶▶┆ Fixed for ch.qos.logback:logback-core at versions: 1.3.15, 1.5.13[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+    ❯❱ org.springframework:spring-context - CVE-2024-38820
+          Severity: [1m[24mMODERATE[0m
+          Affected versions of org.springframework:spring-context and org.springframework:spring-web are
+          vulnerable to Improper Handling of Case Sensitivity.
+
+  [32m[22m[24m         ▶▶┆ Fixed for org.springframework:spring-context at version: 6.1.14[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+            ⋮┆----------------------------------------
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+    ❯❱ org.apache.tomcat.embed:tomcat-embed-core - CVE-2025-46701
+          Severity: [1m[24mLOW[0m
+          Affected versions of org.apache.tomcat.embed:tomcat-embed-core and org.apache.tomcat:tomcat-catalina
+          are vulnerable to Improper Handling of Case Sensitivity.
+
+  [32m[22m[24m         ▶▶┆ Fixed for org.apache.tomcat.embed:tomcat-embed-core at versions: 10.1.41, 11.0.7, 9.0.105[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+    ❯❱ com.fasterxml.jackson.core:jackson-core - CVE-2025-52999
+          Severity: [1m[24mHIGH[0m
+          Affected versions of com.fasterxml.jackson.core:jackson-core are vulnerable to Stack-based Buffer
+          Overflow.
+
+  [32m[22m[24m         ▶▶┆ Fixed for com.fasterxml.jackson.core:jackson-core at version: 2.15.0[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+    ❯❱ org.springframework:spring-web - CVE-2024-38809
+          Severity: [1m[24mMODERATE[0m
+          Affected versions of org.springframework:spring-web are vulnerable to Inefficient Regular Expression
+          Complexity / Uncontrolled Resource Consumption.
+
+  [32m[22m[24m         ▶▶┆ Fixed for org.springframework:spring-web at versions: 5.3.38, 6.0.23, 6.1.12[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+    ❯❱ com.fasterxml.jackson.core:jackson-databind - CVE-2020-36179
+          Severity: [1m[24mHIGH[0m
+          Affected versions of com.fasterxml.jackson.core:jackson-databind are vulnerable to Deserialization
+          of Untrusted Data.
+
+  [32m[22m[24m         ▶▶┆ Fixed for com.fasterxml.jackson.core:jackson-databind at versions: 2.6.7.5, 2.9.10.8[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+    ❯❱ ch.qos.logback:logback-core - CVE-2024-12801
+          Severity: [1m[24mLOW[0m
+          Affected versions of ch.qos.logback:logback-core are vulnerable to Server-Side Request Forgery
+          (SSRF).
+
+  [32m[22m[24m         ▶▶┆ Fixed for ch.qos.logback:logback-core at versions: 1.3.15, 1.5.13[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+    ❯❱ com.fasterxml.jackson.core:jackson-databind - CVE-2020-11620
+          Severity: [1m[24mHIGH[0m
+          Affected versions of com.fasterxml.jackson.core:jackson-databind are vulnerable to Deserialization
+          of Untrusted Data.
+
+  [32m[22m[24m         ▶▶┆ Fixed for com.fasterxml.jackson.core:jackson-databind at version: 2.9.10.4[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+    ❯❱ com.fasterxml.jackson.core:jackson-databind - CVE-2020-14060
+          Severity: [1m[24mHIGH[0m
+          Affected versions of com.fasterxml.jackson.core:jackson-databind are vulnerable to Deserialization
+          of Untrusted Data.
+
+  [32m[22m[24m         ▶▶┆ Fixed for com.fasterxml.jackson.core:jackson-databind at version: 2.9.10.5[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+    ❯❱ com.fasterxml.jackson.core:jackson-databind - CVE-2020-14195
+          Severity: [1m[24mHIGH[0m
+          Affected versions of com.fasterxml.jackson.core:jackson-databind are vulnerable to Deserialization
+          of Untrusted Data.
+
+  [32m[22m[24m         ▶▶┆ Fixed for com.fasterxml.jackson.core:jackson-databind at version: 2.9.10.5[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+    ❯❱ com.fasterxml.jackson.core:jackson-databind - CVE-2021-20190
+          Severity: [1m[24mHIGH[0m
+          Affected versions of com.fasterxml.jackson.core:jackson-databind are vulnerable to Deserialization
+          of Untrusted Data.
+
+  [32m[22m[24m         ▶▶┆ Fixed for com.fasterxml.jackson.core:jackson-databind at versions: 2.6.7.5, 2.9.10.7[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+    ❯❱ com.fasterxml.jackson.core:jackson-databind - CVE-2020-11113
+          Severity: [1m[24mHIGH[0m
+          Affected versions of com.fasterxml.jackson.core:jackson-databind are vulnerable to Deserialization
+          of Untrusted Data.
+
+  [32m[22m[24m         ▶▶┆ Fixed for com.fasterxml.jackson.core:jackson-databind at version: 2.9.10.4[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+    ❯❱ com.fasterxml.jackson.core:jackson-databind - CVE-2020-36180
+          Severity: [1m[24mHIGH[0m
+          Affected versions of com.fasterxml.jackson.core:jackson-databind are vulnerable to Deserialization
+          of Untrusted Data.
+
+  [32m[22m[24m         ▶▶┆ Fixed for com.fasterxml.jackson.core:jackson-databind at versions: 2.6.7.5, 2.9.10.8[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+    ❯❱ org.yaml:snakeyaml - CVE-2022-38752
+          Severity: [1m[24mMODERATE[0m
+          Affected versions of org.yaml:snakeyaml are vulnerable to Out-of-bounds Write / Stack-based Buffer
+          Overflow.
+
+  [32m[22m[24m         ▶▶┆ Fixed for org.yaml:snakeyaml at version: 1.32[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+    ❯❱ com.fasterxml.jackson.core:jackson-databind - CVE-2020-10672
+          Severity: [1m[24mHIGH[0m
+          Affected versions of com.fasterxml.jackson.core:jackson-databind are vulnerable to Deserialization
+          of Untrusted Data.
+
+  [32m[22m[24m         ▶▶┆ Fixed for com.fasterxml.jackson.core:jackson-databind at version: 2.9.10.4[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+    ❯❱ com.fasterxml.jackson.core:jackson-databind - CVE-2020-35490
+          Severity: [1m[24mHIGH[0m
+          Affected versions of com.fasterxml.jackson.core:jackson-databind are vulnerable to Deserialization
+          of Untrusted Data.
+
+  [32m[22m[24m         ▶▶┆ Fixed for com.fasterxml.jackson.core:jackson-databind at version: 2.9.10.8[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+    ❯❱ com.fasterxml.jackson.core:jackson-databind - CVE-2020-11111
+          Severity: [1m[24mHIGH[0m
+          Affected versions of com.fasterxml.jackson.core:jackson-databind are vulnerable to Deserialization
+          of Untrusted Data.
+
+  [32m[22m[24m         ▶▶┆ Fixed for com.fasterxml.jackson.core:jackson-databind at version: 2.9.10.4[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+    ❯❱ com.fasterxml.jackson.core:jackson-databind - CVE-2020-36518
+          Severity: [1m[24mHIGH[0m
+          Affected versions of com.fasterxml.jackson.core:jackson-databind are vulnerable to Out-of-bounds
+          Write.
+
+  [32m[22m[24m         ▶▶┆ Fixed for com.fasterxml.jackson.core:jackson-databind at versions: 2.12.6.1, 2.13.2.1[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+    ❯❱ org.apache.tomcat.embed:tomcat-embed-core - CVE-2025-31650
+          Severity: [1m[24mMODERATE[0m
+          Affected versions of org.apache.tomcat.embed:tomcat-embed-core and org.apache.tomcat:tomcat-coyote
+          are vulnerable to Improper Cleanup on Thrown Exception / Incomplete Cleanup.
+
+  [32m[22m[24m         ▶▶┆ Fixed for org.apache.tomcat.embed:tomcat-embed-core at versions: 10.1.40, 11.0.6, 9.0.104[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+    ❯❱ com.fasterxml.jackson.core:jackson-databind - CVE-2020-10968
+          Severity: [1m[24mHIGH[0m
+          Affected versions of com.fasterxml.jackson.core:jackson-databind are vulnerable to Deserialization
+          of Untrusted Data.
+
+  [32m[22m[24m         ▶▶┆ Fixed for com.fasterxml.jackson.core:jackson-databind at version: 2.9.10.4[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+    ❯❱ org.yaml:snakeyaml - CVE-2022-41854
+          Severity: [1m[24mMODERATE[0m
+          Affected versions of org.yaml:snakeyaml are vulnerable to Out-of-bounds Write / Stack-based Buffer
+          Overflow.
+
+  [32m[22m[24m         ▶▶┆ Fixed for org.yaml:snakeyaml at version: 1.32[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+    ❯❱ org.yaml:snakeyaml - CVE-2022-38750
+          Severity: [1m[24mMODERATE[0m
+          Affected versions of org.yaml:snakeyaml are vulnerable to Out-of-bounds Write / Stack-based Buffer
+          Overflow.
+
+  [32m[22m[24m         ▶▶┆ Fixed for org.yaml:snakeyaml at version: 1.31[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+    ❯❱ com.fasterxml.jackson.core:jackson-databind - CVE-2019-12384
+          Severity: [1m[24mMODERATE[0m
+          Affected versions of com.fasterxml.jackson.core:jackson-databind are vulnerable to Deserialization
+          of Untrusted Data.
+
+  [32m[22m[24m         ▶▶┆ Fixed for com.fasterxml.jackson.core:jackson-databind at versions: 2.6.7.3, 2.7.9.6,
+  2.8.11.4, 2.9.9.1[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+    ❯❱ com.fasterxml.jackson.core:jackson-databind - CVE-2020-24616
+          Severity: [1m[24mHIGH[0m
+          Affected versions of com.fasterxml.jackson.core:jackson-databind are vulnerable to Deserialization
+          of Untrusted Data / Improper Control of Generation of Code ('Code Injection').
+
+  [32m[22m[24m         ▶▶┆ Fixed for com.fasterxml.jackson.core:jackson-databind at version: 2.9.10.6[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+    ❯❱ com.fasterxml.jackson.core:jackson-databind - CVE-2019-14893
+          Severity: [1m[24mHIGH[0m
+          Affected versions of com.fasterxml.jackson.core:jackson-databind are vulnerable to Deserialization
+          of Untrusted Data.
+
+  [32m[22m[24m         ▶▶┆ Fixed for com.fasterxml.jackson.core:jackson-databind at version: 2.9.10[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+    ❯❱ com.fasterxml.jackson.core:jackson-databind - CVE-2020-10673
+          Severity: [1m[24mHIGH[0m
+          Affected versions of com.fasterxml.jackson.core:jackson-databind are vulnerable to Deserialization
+          of Untrusted Data.
+
+  [32m[22m[24m         ▶▶┆ Fixed for com.fasterxml.jackson.core:jackson-databind at versions: 2.6.7.4, 2.9.10.4[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+    ❯❱ org.apache.tomcat.embed:tomcat-embed-websocket - CVE-2024-23672
+          Severity: [1m[24mMODERATE[0m
+          Affected versions of org.apache.tomcat.embed:tomcat-embed-websocket and org.apache.tomcat:tomcat-
+          websocket are vulnerable to Incomplete Cleanup.
+
+  [32m[22m[24m         ▶▶┆ Fixed for org.apache.tomcat.embed:tomcat-embed-websocket at versions: 10.1.19, 11.0.0-M17,
+  8.5.99, 9.0.86[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+    ❯❱ com.fasterxml.jackson.core:jackson-databind - CVE-2019-12814
+          Severity: [1m[24mMODERATE[0m
+          Affected versions of com.fasterxml.jackson.core:jackson-databind are vulnerable to Deserialization
+          of Untrusted Data.
+
+  [32m[22m[24m         ▶▶┆ Fixed for com.fasterxml.jackson.core:jackson-databind at versions: 2.6.7.3, 2.7.9.6,
+  2.8.11.4, 2.9.9.1[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+    ❯❱ org.yaml:snakeyaml - CVE-2022-38749
+          Severity: [1m[24mMODERATE[0m
+          Affected versions of be.cylab:snakeyaml, com.alipay.sofa.acts:acts-common-util,
+          io.prometheus.jmx:jmx_prometheus_httpserver, io.prometheus.jmx:jmx_prometheus_httpserver_java6,
+          org.testifyproject.external:external-snakeyaml, org.yaml:snakeyaml, and
+          pl.droidsonroids.yaml:snakeyaml are vulnerable to Out-of-bounds Write / Stack-based Buffer Overflow.
+
+  [32m[22m[24m         ▶▶┆ Fixed for org.yaml:snakeyaml at version: 1.31[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+    ❯❱ com.fasterxml.jackson.core:jackson-databind - CVE-2020-36182
+          Severity: [1m[24mHIGH[0m
+          Affected versions of com.fasterxml.jackson.core:jackson-databind are vulnerable to Deserialization
+          of Untrusted Data.
+
+  [32m[22m[24m         ▶▶┆ Fixed for com.fasterxml.jackson.core:jackson-databind at versions: 2.6.7.5, 2.9.10.8[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+    ❯❱ org.yaml:snakeyaml - CVE-2022-38751
+          Severity: [1m[24mMODERATE[0m
+          Affected versions of org.yaml:snakeyaml are vulnerable to Out-of-bounds Write / Stack-based Buffer
+          Overflow.
+
+  [32m[22m[24m         ▶▶┆ Fixed for org.yaml:snakeyaml at version: 1.31[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+    ❯❱ com.fasterxml.jackson.core:jackson-databind - CVE-2020-36187
+          Severity: [1m[24mHIGH[0m
+          Affected versions of com.fasterxml.jackson.core:jackson-databind are vulnerable to Deserialization
+          of Untrusted Data.
+
+  [32m[22m[24m         ▶▶┆ Fixed for com.fasterxml.jackson.core:jackson-databind at version: 2.9.10.8[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+    ❯❱ com.fasterxml.jackson.core:jackson-databind - CVE-2020-36181
+          Severity: [1m[24mHIGH[0m
+          Affected versions of com.fasterxml.jackson.core:jackson-databind are vulnerable to Deserialization
+          of Untrusted Data.
+
+  [32m[22m[24m         ▶▶┆ Fixed for com.fasterxml.jackson.core:jackson-databind at versions: 2.6.7.5, 2.9.10.8[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+    ❯❱ com.fasterxml.jackson.core:jackson-databind - CVE-2019-14892
+          Severity: [1m[24mHIGH[0m
+          Affected versions of com.fasterxml.jackson.core:jackson-databind are vulnerable to Deserialization
+          of Untrusted Data / Exposure of Sensitive Information to an Unauthorized Actor.
+
+  [32m[22m[24m         ▶▶┆ Fixed for com.fasterxml.jackson.core:jackson-databind at versions: 2.6.7.3, 2.8.11.5,
+  2.9.10[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+    ❯❱ com.fasterxml.jackson.core:jackson-databind - CVE-2020-14062
+          Severity: [1m[24mHIGH[0m
+          Affected versions of com.fasterxml.jackson.core:jackson-databind are vulnerable to Deserialization
+          of Untrusted Data.
+
+  [32m[22m[24m         ▶▶┆ Fixed for com.fasterxml.jackson.core:jackson-databind at version: 2.9.10.5[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+    ❯❱ com.fasterxml.jackson.core:jackson-databind - CVE-2020-25649
+          Severity: [1m[24mHIGH[0m
+          Affected versions of com.fasterxml.jackson.core:jackson-databind are vulnerable to Improper
+          Restriction of XML External Entity Reference.
+
+  [32m[22m[24m         ▶▶┆ Fixed for com.fasterxml.jackson.core:jackson-databind at versions: 2.10.5.1, 2.6.7.4,
+  2.9.10.7[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+    ❯❱ org.springframework:spring-context - CVE-2025-22233
+          Severity: [1m[24mLOW[0m
+          Affected versions of org.springframework:spring-context are vulnerable to Improper Input Validation.
+
+  [32m[22m[24m         ▶▶┆ Fixed for org.springframework:spring-context at versions: 6.1.20, 6.2.7[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+    ❯❱ com.fasterxml.jackson.core:jackson-databind - CVE-2020-35491
+          Severity: [1m[24mHIGH[0m
+          Affected versions of com.fasterxml.jackson.core:jackson-databind are vulnerable to Deserialization
+          of Untrusted Data / Improper Control of Dynamically-Managed Code Resources.
+
+  [32m[22m[24m         ▶▶┆ Fixed for com.fasterxml.jackson.core:jackson-databind at version: 2.9.10.8[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+    ❯❱ org.apache.tomcat.embed:tomcat-embed-core - CVE-2025-31651
+          Severity: [1m[24mLOW[0m
+          Affected versions of org.apache.tomcat.embed:tomcat-embed-core and org.apache.tomcat:tomcat-catalina
+          are vulnerable to Improper Encoding or Escaping of Output / Improper Neutralization of Escape, Meta,
+          or Control Sequences.
+
+  [32m[22m[24m         ▶▶┆ Fixed for org.apache.tomcat.embed:tomcat-embed-core at versions: 10.1.40, 11.0.6, 9.0.104[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+    ❯❱ com.fasterxml.jackson.core:jackson-databind - CVE-2020-24750
+          Severity: [1m[24mHIGH[0m
+          Affected versions of com.fasterxml.jackson.core:jackson-databind are vulnerable to Deserialization
+          of Untrusted Data.
+
+  [32m[22m[24m         ▶▶┆ Fixed for com.fasterxml.jackson.core:jackson-databind at versions: 2.6.7.5, 2.9.10.6[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+    ❯❱ org.springframework:spring-webmvc - CVE-2024-38828
+          Severity: [1m[24mMODERATE[0m
+          Affected versions of org.springframework:spring-webmvc are vulnerable to Uncontrolled Resource
+          Consumption.
+
+  [32m[22m[24m         ▶▶┆ Fixed for org.springframework:spring-webmvc at version: 5.3.42[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+    ❯❱ com.fasterxml.jackson.core:jackson-databind - CVE-2019-14439
+          Severity: [1m[24mHIGH[0m
+          Affected versions of com.fasterxml.jackson.core:jackson-databind are vulnerable to Deserialization
+          of Untrusted Data.
+
+  [32m[22m[24m         ▶▶┆ Fixed for com.fasterxml.jackson.core:jackson-databind at versions: 2.6.7.3, 2.7.9.6,
+  2.8.11.4, 2.9.9.2[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+    ❯❱ com.fasterxml.jackson.core:jackson-databind - CVE-2020-36183
+          Severity: [1m[24mHIGH[0m
+          Affected versions of com.fasterxml.jackson.core:jackson-databind are vulnerable to Deserialization
+          of Untrusted Data.
+
+  [32m[22m[24m         ▶▶┆ Fixed for com.fasterxml.jackson.core:jackson-databind at versions: 2.6.7.5, 2.9.10.8[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+    ❯❱ com.fasterxml.jackson.core:jackson-databind - CVE-2020-35728
+          Severity: [1m[24mHIGH[0m
+          Affected versions of com.fasterxml.jackson.core:jackson-databind are vulnerable to Deserialization
+          of Untrusted Data.
+
+  [32m[22m[24m         ▶▶┆ Fixed for com.fasterxml.jackson.core:jackson-databind at version: 2.9.10.8[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+    ❯❱ com.fasterxml.jackson.core:jackson-databind - CVE-2020-36185
+          Severity: [1m[24mHIGH[0m
+          Affected versions of com.fasterxml.jackson.core:jackson-databind are vulnerable to Deserialization
+          of Untrusted Data.
+
+  [32m[22m[24m         ▶▶┆ Fixed for com.fasterxml.jackson.core:jackson-databind at version: 2.9.10.8[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+    ❯❱ org.apache.tomcat.embed:tomcat-embed-core - CVE-2025-49125
+          Severity: [1m[24mMODERATE[0m
+          Affected versions of org.apache.tomcat.embed:tomcat-embed-core and org.apache.tomcat:tomcat-catalina
+          are vulnerable to Authentication Bypass Using an Alternate Path or Channel.
+
+  [32m[22m[24m         ▶▶┆ Fixed for org.apache.tomcat.embed:tomcat-embed-core at versions: 10.1.42, 11.0.8, 9.0.106[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+    ❯❱ org.apache.logging.log4j:log4j-core - CVE-2021-44832
+          Severity: [1m[24mMODERATE[0m
+          Affected versions of org.apache.logging.log4j:log4j-core and org.ops4j.pax.logging:pax-logging-
+          log4j2 are vulnerable to Improper Input Validation / Improper Neutralization of Special Elements in
+          Output Used by a Downstream Component ('Injection').
+
+  [32m[22m[24m         ▶▶┆ Fixed for org.apache.logging.log4j:log4j-core at versions: 2.12.4, 2.17.1, 2.3.2[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+    ❯❱ com.fasterxml.jackson.core:jackson-databind - CVE-2020-36189
+          Severity: [1m[24mHIGH[0m
+          Affected versions of com.fasterxml.jackson.core:jackson-databind are vulnerable to Deserialization
+          of Untrusted Data.
+
+  [32m[22m[24m         ▶▶┆ Fixed for com.fasterxml.jackson.core:jackson-databind at versions: 2.6.7.5, 2.9.10.8[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+    ❯❱ org.springframework:spring-expression - CVE-2024-38808
+          Severity: [1m[24mMODERATE[0m
+          Affected versions of org.springframework:spring-expression are vulnerable to Allocation of Resources
+          Without Limits or Throttling.
+
+  [32m[22m[24m         ▶▶┆ Fixed for org.springframework:spring-expression at version: 5.3.39[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+    ❯❱ com.fasterxml.jackson.core:jackson-databind - CVE-2020-11112
+          Severity: [1m[24mHIGH[0m
+          Affected versions of com.fasterxml.jackson.core:jackson-databind are vulnerable to Deserialization
+          of Untrusted Data.
+
+  [32m[22m[24m         ▶▶┆ Fixed for com.fasterxml.jackson.core:jackson-databind at version: 2.9.10.4[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+    ❯❱ org.apache.logging.log4j:log4j-core - CVE-2021-45105
+          Severity: [1m[24mHIGH[0m
+          Affected versions of org.apache.logging.log4j:log4j-core and org.ops4j.pax.logging:pax-logging-
+          log4j2 are vulnerable to Improper Input Validation / Uncontrolled Recursion.
+
+  [32m[22m[24m         ▶▶┆ Fixed for org.apache.logging.log4j:log4j-core at versions: 2.12.3, 2.17.0, 2.3.1[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+    ❯❱ commons-collections:commons-collections - CVE-2015-6420
+          Severity: [1m[24mHIGH[0m
+          Affected versions of commons-collections:commons-collections,
+          net.sourceforge.collections:collections-generic, org.apache.commons:commons-collections4,
+          org.apache.servicemix.bundles:org.apache.servicemix.bundles.collections-generic, and
+          org.apache.servicemix.bundles:org.apache.servicemix.bundles.commons-collections are vulnerable to
+          Deserialization of Untrusted Data.
+
+  [32m[22m[24m         ▶▶┆ Fixed for commons-collections:commons-collections at version: 3.2.2[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+    ❯❱ com.fasterxml.jackson.core:jackson-databind - CVE-2020-36184
+          Severity: [1m[24mHIGH[0m
+          Affected versions of com.fasterxml.jackson.core:jackson-databind are vulnerable to Deserialization
+          of Untrusted Data.
+
+  [32m[22m[24m         ▶▶┆ Fixed for com.fasterxml.jackson.core:jackson-databind at version: 2.9.10.8[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+    ❯❱ com.fasterxml.jackson.core:jackson-databind - CVE-2020-36188
+          Severity: [1m[24mHIGH[0m
+          Affected versions of com.fasterxml.jackson.core:jackson-databind are vulnerable to Deserialization
+          of Untrusted Data.
+
+  [32m[22m[24m         ▶▶┆ Fixed for com.fasterxml.jackson.core:jackson-databind at versions: 2.6.7.5, 2.9.10.8[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+    ❯❱ com.fasterxml.jackson.core:jackson-databind - CVE-2020-11619
+          Severity: [1m[24mHIGH[0m
+          Affected versions of com.fasterxml.jackson.core:jackson-databind are vulnerable to Deserialization
+          of Untrusted Data.
+
+  [32m[22m[24m         ▶▶┆ Fixed for com.fasterxml.jackson.core:jackson-databind at version: 2.9.10.4[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+    ❯❱ com.fasterxml.jackson.core:jackson-databind - CVE-2020-36186
+          Severity: [1m[24mHIGH[0m
+          Affected versions of com.fasterxml.jackson.core:jackson-databind are vulnerable to Deserialization
+          of Untrusted Data.
+
+  [32m[22m[24m         ▶▶┆ Fixed for com.fasterxml.jackson.core:jackson-databind at version: 2.9.10.8[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+    ❯❱ com.fasterxml.jackson.core:jackson-databind - CVE-2020-14061
+          Severity: [1m[24mHIGH[0m
+          Affected versions of com.fasterxml.jackson.core:jackson-databind are vulnerable to Deserialization
+          of Untrusted Data.
+
+  [32m[22m[24m         ▶▶┆ Fixed for com.fasterxml.jackson.core:jackson-databind at version: 2.9.10.5[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+
+┌─────────────────────────────────┐
+│ 11 Unvalidated Secrets Findings │
+└─────────────────────────────────┘
+
+  [36m[22m[24m  src/main/java/org/example/secretsDemo.java[0m
+    ❯❱ secrets.misc.generic_basic_auth_header.generic_basic_auth_header
+          A secret is hard-coded in the application. Secrets stored in source code, such as credentials,
+          identifiers, and other types of sensitive data, can be leaked and used by internal or external
+          malicious actors. It is recommended to rotate the secret and retrieve them from a secure secret
+          vault or Hardware Security Module (HSM), alternatively environment variables can be used if allowed
+          by your company policy.
+          Details: https://semgrep.dev/orgs/-/editor/r/9EYr
+
+           34┆ String basicAuth = "Authorization: Basic ************************";
+
+    ❯❱ secrets.generic.api-key.string.string
+          A secret is hard-coded in the application. Secrets stored in source code, such as credentials,
+          identifiers, and other types of sensitive data, can be leaked and used by internal or external
+          malicious actors. It is recommended to rotate the secret and retrieve them from a secure secret
+          vault or Hardware Security Module (HSM), alternatively environment variables can be used if allowed
+          by your company policy.
+          Details: https://semgrep.dev/orgs/-/editor/r/BYbz7
+
+           50┆ String mailgunApiKey = "key-25g*****************************";
+
+    ❯❱ secrets.services.mailgun_key_token.mailgun-key-token
+          A secret is hard-coded in the application. Secrets stored in source code, such as credentials,
+          identifiers, and other types of sensitive data, can be leaked and used by internal or external
+          malicious actors. It is recommended to rotate the secret and retrieve them from a secure secret
+          vault or Hardware Security Module (HSM), alternatively environment variables can be used if allowed
+          by your company policy.
+          Details: https://semgrep.dev/orgs/-/editor/r/Qjxq
+
+           50┆ String mailgunApiKey = "key-25g*****************************";
+
+    ❯❱ secrets.generic.api-key.string.string
+          A secret is hard-coded in the application. Secrets stored in source code, such as credentials,
+          identifiers, and other types of sensitive data, can be leaked and used by internal or external
+          malicious actors. It is recommended to rotate the secret and retrieve them from a secure secret
+          vault or Hardware Security Module (HSM), alternatively environment variables can be used if allowed
+          by your company policy.
+          Details: https://semgrep.dev/orgs/-/editor/r/BYbz7
+
+           51┆ String mailgunApiKey2 = "key-25g*****************************";
+
+    ❯❱ secrets.services.mailgun_key_token.mailgun-key-token
+          A secret is hard-coded in the application. Secrets stored in source code, such as credentials,
+          identifiers, and other types of sensitive data, can be leaked and used by internal or external
+          malicious actors. It is recommended to rotate the secret and retrieve them from a secure secret
+          vault or Hardware Security Module (HSM), alternatively environment variables can be used if allowed
+          by your company policy.
+          Details: https://semgrep.dev/orgs/-/editor/r/Qjxq
+
+           51┆ String mailgunApiKey2 = "key-25g*****************************";
+
+    ❯❱ secrets.generic.api-key.string.string
+          A secret is hard-coded in the application. Secrets stored in source code, such as credentials,
+          identifiers, and other types of sensitive data, can be leaked and used by internal or external
+          malicious actors. It is recommended to rotate the secret and retrieve them from a secure secret
+          vault or Hardware Security Module (HSM), alternatively environment variables can be used if allowed
+          by your company policy.
+          Details: https://semgrep.dev/orgs/-/editor/r/BYbz7
+
+           57┆ String herokuApiKey = "8b4eaf3******************************";
+
+    ❯❱ secrets.misc.generic_mongodb_string.generic_mongodb_string
+          A secret is hard-coded in the application. Secrets stored in source code, such as credentials,
+          identifiers, and other types of sensitive data, can be leaked and used by internal or external
+          malicious actors. It is recommended to rotate the secret and retrieve them from a secure secret
+          vault or Hardware Security Module (HSM), alternatively environment variables can be used if allowed
+          by your company policy.
+          Details: https://semgrep.dev/orgs/-/editor/r/b5zr
+
+           62┆ String mongoUrl = "mongodb://r*********************************************";
+
+    ❯❱ secrets.misc.generic_postgres_string.generic_postgres_string
+          A secret is hard-coded in the application. Secrets stored in source code, such as credentials,
+          identifiers, and other types of sensitive data, can be leaked and used by internal or external
+          malicious actors. It is recommended to rotate the secret and retrieve them from a secure secret
+          vault or Hardware Security Module (HSM), alternatively environment variables can be used if allowed
+          by your company policy.
+          Details: https://semgrep.dev/orgs/-/editor/r/y7EP
+
+           63┆ String postgresUrl = "postgres:/*****************************************";
+
+    ❯❱ secrets.misc.generic_redis_string.generic_redis_string
+          A secret is hard-coded in the application. Secrets stored in source code, such as credentials,
+          identifiers, and other types of sensitive data, can be leaked and used by internal or external
+          malicious actors. It is recommended to rotate the secret and retrieve them from a secure secret
+          vault or Hardware Security Module (HSM), alternatively environment variables can be used if allowed
+          by your company policy.
+          Details: https://semgrep.dev/orgs/-/editor/r/kqpz
+
+           64┆ String redisUrl = "redis://de****************************************";
+            ⋮┆----------------------------------------
+           65┆ String redisUrl2 = "redis://d****************************************";
+            ⋮┆----------------------------------------
+           66┆ String redisUrl3 = "redis://de********************************************";
+
+
+┌──────────────────────────────────────┐
+│ 16 Unreachable Supply Chain Findings │
+└──────────────────────────────────────┘
+
+  [36m[22m[24m  pom.xml[0m
+   ❯❯❱ org.springframework:spring-web - CVE-2024-22262
+          Severity: [1m[24mHIGH[0m
+          Affected versions of org.springframework:spring-web are vulnerable to URL Redirection to Untrusted
+          Site ('Open Redirect').
+
+  [32m[22m[24m         ▶▶┆ Fixed for org.springframework:spring-web at versions: 5.3.34, 6.0.19, 6.1.6[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+   ❯❯❱ org.springframework.boot:spring-boot - CVE-2025-22235
+          Severity: [1m[24mHIGH[0m
+          Affected versions of org.springframework.boot:spring-boot are vulnerable to Improper Input
+          Validation / Missing Authorization. A misconfiguration in Spring Boot’s security configuration can
+          lead to a vulnerable endpoint. When using Spring Security with EndpointRequest.to(), if the
+          referenced actuator endpoint is disabled or not exposed via web, the matcher is constructed for the
+          /null path. If your application handles requests at /null and expects them to be secured, this
+          configuration flaw could allow an attacker to bypass intended protections.
+
+  [32m[22m[24m         ▶▶┆ Fixed for org.springframework.boot:spring-boot at versions: 3.3.11, 3.4.5[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+   ❯❯❱ org.springframework:spring-webmvc - CVE-2024-38816
+          Severity: [1m[24mHIGH[0m
+          Affected versions of org.springframework:spring-webflux and org.springframework:spring-webmvc are
+          vulnerable to Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal').
+
+  [32m[22m[24m         ▶▶┆ Fixed for org.springframework:spring-webmvc at version: 6.1.13[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+   ❯❯❱ org.apache.tomcat.embed:tomcat-embed-core - CVE-2024-50379
+          Severity: [1m[24mHIGH[0m
+          Affected versions of org.apache.tomcat.embed:tomcat-embed-core and org.apache.tomcat:tomcat-catalina
+          are vulnerable to Time-of-check Time-of-use (TOCTOU) Race Condition. A race condition vulnerability
+          during JSP compilation in Apache Tomcat enables remote code execution on case-insensitive file
+          systems when the default servlet is misconfigured to allow write access. An attacker can exploit
+          this by manipulating the timing of file operations, potentially executing arbitrary code within the
+          server environment.
+
+  [32m[22m[24m         ▶▶┆ Fixed for org.apache.tomcat.embed:tomcat-embed-core at versions: 10.1.34, 11.0.2, 9.0.98[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+   ❯❯❱ org.springframework:spring-webmvc - CVE-2024-38819
+          Severity: [1m[24mHIGH[0m
+          Affected versions of org.springframework:spring-webflux and org.springframework:spring-webmvc are
+          vulnerable to Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal').
+          Applications serving static resources through the functional web frameworks WebMvc.fn or WebFlux.fn
+          are vulnerable to path traversal attacks.
+
+  [32m[22m[24m         ▶▶┆ Fixed for org.springframework:spring-webmvc at version: 6.1.14[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+   ❯❯❱ org.apache.tomcat.embed:tomcat-embed-core - CVE-2025-48988
+          Severity: [1m[24mHIGH[0m
+          Affected versions of org.apache.tomcat.embed:tomcat-embed-core and org.apache.tomcat:tomcat-catalina
+          are vulnerable to Allocation of Resources Without Limits or Throttling. Apache Tomcat is vulnerable
+          to uncontrolled resource allocation, where a lack of limits or throttling can let an attacker cause
+          excessive resource consumption. This may lead to service disruption or denial-of-service (DoS)
+          conditions if exploited.
+
+  [32m[22m[24m         ▶▶┆ Fixed for org.apache.tomcat.embed:tomcat-embed-core at versions: 10.1.42, 11.0.8, 9.0.106[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+   ❯❯❱ ch.qos.logback:logback-core - CVE-2023-6378
+          Severity: [1m[24mHIGH[0m
+          Affected versions of ch.qos.logback:logback-core and ch.qos.logback:logback-classic are vulnerable
+          to Uncontrolled Resource Consumption. A serialization vulnerability in the logback reciever
+          component part of lockback allows an attacker to mount a Denial-Of-Service attack by sending
+          poisoned data.
+
+  [32m[22m[24m         ▶▶┆ Fixed for ch.qos.logback:logback-core at versions: 1.2.13, 1.3.12, 1.4.12[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+            ⋮┆----------------------------------------
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+   ❯❯❱ org.yaml:snakeyaml - CVE-2022-1471
+          Severity: [1m[24mHIGH[0m
+          snakeyaml <= 1.33 is vulnerable to unsafe deserialization, which can lead to Remote Code Execution
+          (RCE) if deserializing untrusted data using Constructor(). It is recommended to upgrade snakeyaml to
+          2.0 or greater and use SafeConstructor() instead of Constructor().
+
+  [32m[22m[24m         ▶▶┆ Fixed for org.yaml:snakeyaml at version: 2.0[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+   ❯❯❱ org.yaml:snakeyaml - CVE-2022-25857
+          Severity: [1m[24mHIGH[0m
+          Affected versions of org.yaml:snakeyaml are vulnerable to Improper Restriction of Recursive Entity
+          References in DTDs ('XML Entity Expansion') / Uncontrolled Resource Consumption. SnakeYAML is
+          vulnerable to a Denial of Service attack when processing deeply nested YAML collections. Without a
+          nested depth limit, a maliciously crafted YAML input could overwhelm the parser with excessive
+          nesting, leading to significant resource exhaustion and potential service disruption.
+
+  [32m[22m[24m         ▶▶┆ Fixed for org.yaml:snakeyaml at version: 1.31[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+   ❯❯❱ org.springframework:spring-web - CVE-2024-22259
+          Severity: [1m[24mHIGH[0m
+          Affected versions of org.springframework:spring-web are vulnerable to Url Redirection To Untrusted
+          Site ('Open Redirect'). The vulnerability lies in applications employing UriComponentsBuilder to
+          parse externally provided URLs potentially exposing them to open redirect attacks or SSRF attacks
+
+  [32m[22m[24m         ▶▶┆ Fixed for org.springframework:spring-web at versions: 5.3.33, 6.0.18, 6.1.5[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+   ❯❯❱ com.fasterxml.jackson.core:jackson-databind - CVE-2022-42003
+          Severity: [1m[24mHIGH[0m
+          In FasterXML jackson-databind before 2.12.7.1 and in 2.13.x before 2.13.4.1 resource exhaustion can
+          occur because of a lack of a check in primitive value deserializers to avoid deep wrapper array
+          nesting, when the UNWRAP_SINGLE_VALUE_ARRAYS feature is enabled. This was patched in 2.12.7.1,
+          2.13.4.1, and 2.14.0.
+
+  [32m[22m[24m         ▶▶┆ Fixed for com.fasterxml.jackson.core:jackson-databind at versions: 2.12.7.1, 2.13.4.2[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+   ❯❯❱ org.springframework:spring-web - CVE-2024-22243
+          Severity: [1m[24mHIGH[0m
+          Affected versions of org.springframework:spring-web are vulnerable to URL Redirection to Untrusted
+          Site ('Open Redirect')/Server-Side Request Forgery (SSRF). The vulnerability lies in applications
+          employing UriComponentsBuilder to parse externally provided URLs potentially exposing them to open
+          redirect attacks or SSRF attacks
+
+  [32m[22m[24m         ▶▶┆ Fixed for org.springframework:spring-web at versions: 5.3.32, 6.0.17, 6.1.4[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+   ❯❯❱ ch.qos.logback:logback-core - CVE-2023-6481
+          Severity: [1m[24mHIGH[0m
+          Affected versions of ch.qos.logback:logback-core are vulnerable to Uncontrolled Resource
+          Consumption. The vulnerability lies in Uncontrolled Resource Consumption ('Resource Exhaustion')
+          through the logback receiver component, enabling attackers to initiate a denial-of-service attack by
+          transmitting malicious data.
+
+  [32m[22m[24m         ▶▶┆ Fixed for ch.qos.logback:logback-core at versions: 1.2.13, 1.3.14, 1.4.14[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+   ❯❯❱ com.fasterxml.jackson.core:jackson-databind - CVE-2020-10650
+          Severity: [1m[24mHIGH[0m
+          com.fasterxml.jackson.core:jackson-databind <= 2.9.10.3 is vulnerable to code execution via
+          deserialization of untrusted data if the Apache Ignite Java Transaction API is in the classpath.
+
+  [32m[22m[24m         ▶▶┆ Fixed for com.fasterxml.jackson.core:jackson-databind at version: 2.9.10.4[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+   ❯❯❱ com.fasterxml.jackson.core:jackson-databind - CVE-2022-42004
+          Severity: [1m[24mHIGH[0m
+          Affected versions of com.fasterxml.jackson.core:jackson-databind are vulnerable to Deserialization
+          of Untrusted Data / Uncontrolled Resource Consumption. In FasterXML jackson-databind versions before
+          2.12.7.1 and 2.13.x before 2.13.4, enabling the `UNWRAP_SINGLE_VALUE_ARRAYS` feature allows a
+          specially crafted deeply nested array to exhaust system resources during deserialization. This can
+          lead to application crashes or Denial of Service (DoS), as unvalidated input can exploit the lack of
+          checks in the deserialization process.
+
+  [32m[22m[24m         ▶▶┆ Fixed for com.fasterxml.jackson.core:jackson-databind at versions: 2.12.7.1, 2.13.4[0m
+            1┆ <?xml version="1.0" encoding="UTF-8"?>
+
+
+┌─────────────────────────────┐
+│ 11 Invalid Secrets Findings │
+└─────────────────────────────┘
+
+  [36m[22m[24m  src/main/java/org/example/secretsDemo.java[0m
+   ❯❯❱ secrets.services.aws_secret.aws-secret
+          A secret is hard-coded in the application. Secrets stored in source code, such as credentials,
+          identifiers, and other types of sensitive data, can be leaked and used by internal or external
+          malicious actors. It is recommended to rotate the secret and retrieve them from a secure secret
+          vault or Hardware Security Module (HSM), alternatively environment variables can be used if allowed
+          by your company policy.
+          Details: https://semgrep.dev/orgs/-/editor/r/n6YZ
+
+            6┆ String awsAccessKeyId = "AKIA****************";
+
+   ❯❯❱ secrets.services.github_pat.github_pat
+          To revoke the token, visit the `Active tokens` page in the organization settings screen: `https://
+          github.com/organizations/<ORG>/settings/personal-access-tokens/active`. From here, select the token,
+          and revoke it using the drop down field and selecting `"Revoke"`.
+          Details: https://semgrep.dev/orgs/-/editor/r/b5nv
+
+            9┆ String githubToken = "****D8fR2sY9ABQpGgW2S3xF4dVYZkNpWqz57TbR";
+            ⋮┆----------------------------------------
+            9┆ String githubToken = "ghp_D8fR********************************";
+            ⋮┆----------------------------------------
+           10┆ String githubToken44 = "****D8fR2sY9ABQpGgW2S3xF4dVYZkNpWqz57TbR";
+            ⋮┆----------------------------------------
+           10┆ String githubToken44 = "ghp_D8fR********************************";
+
+   ❯❯❱ secrets.services.gitlabv2.gitlabv2
+          A secret is hard-coded in the application. Secrets stored in source code, such as credentials,
+          identifiers, and other types of sensitive data, can be leaked and used by internal or external
+          malicious actors. It is recommended to rotate the secret and retrieve them from a secure secret
+          vault or Hardware Security Module (HSM), alternatively environment variables can be used if allowed
+          by your company policy.
+          Details: https://semgrep.dev/orgs/-/editor/r/x3py
+
+           12┆ String gitlabToken = "g*****28eFqsNLmXKJxuPbaYBZ";
+            ⋮┆----------------------------------------
+           12┆ String gitlabToken = "glpat*********************";
+            ⋮┆----------------------------------------
+           13┆ String gitlabToken2 = "g*****28eFqsNLmXKJxuPbaYBZ";
+            ⋮┆----------------------------------------
+           13┆ String gitlabToken2 = "glpat*********************";
+
+   ❯❯❱ secrets.services.slack_bot_token.slack-bot-token
+          A secret is hard-coded in the application. Secrets stored in source code, such as credentials,
+          identifiers, and other types of sensitive data, can be leaked and used by internal or external
+          malicious actors. It is recommended to rotate the secret and retrieve them from a secure secret
+          vault or Hardware Security Module (HSM), alternatively environment variables can be used if allowed
+          by your company policy.
+          Details: https://semgrep.dev/orgs/-/editor/r/eAzL
+
+           15┆ String slackBotToken = "xoxb-875392********************************************";
+
+   ❯❯❱ secrets.services.stripe.stripe
+          A secret is hard-coded in the application. Secrets stored in source code, such as credentials,
+          identifiers, and other types of sensitive data, can be leaked and used by internal or external
+          malicious actors. It is recommended to rotate the secret and retrieve them from a secure secret
+          vault or Hardware Security Module (HSM), alternatively environment variables can be used if allowed
+          by your company policy.
+          Details: https://semgrep.dev/orgs/-/editor/r/Lo6Y
+
+           32┆ String stripeSecretKey = "sk_live_51K*********************************************";
