@@ -51,6 +51,7 @@ public class secretsDemo {
 
 
 
+
         // 🔑 JWT Secrets
         String jwtSecret = "P8Lm9uQ93$^%$#!)(*&^$&^%$Yz$#$$Fz6Ar@#5cLKMnf8!JHbdE6vZ4UPpTfL";
         // ❌ Embedded credentials in URLs

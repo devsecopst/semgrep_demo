@@ -18,7 +18,6 @@ if [ -z "$staged_Files" ]; then
   exit 0
 fi
 echo "🔍 Running Semgrep scan (warn-only)..."
-
 #one time execution.
 semgrep login 1>/dev/null
 #semgrep ci --code --secrets --include "$staged_Files" --dry-run 2>/dev/null
