@@ -1,24 +1,9 @@
-default_stages: [pre-commit]
 repos:
-  - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v5.0.0
+  - repo: https://github.com/semgrep/pre-commit
+    rev: 'v1.128.0'
     hooks:
-      - id: check-yaml
-      - id: end-of-file-fixer
-      - id: trailing-whitespace
-  - repo: https://github.com/psf/black
-    rev: 25.1.0
-    hooks:
-      - id: black
-  - repo: local
-    hooks:
-      - id: semgrep-warn-only
-        name: Devsecops-Semgrep Warn-Only
-        entry: semgrep_demo/semgrep-warn-only.sh
-        language: script
-        stages: [pre-commit]
-        pass_filenames: false
-        exclude_types: [yaml,xml,shell]
-        exclude: '\.(txt|log)$'
-        description: "used to conduct semgrep code and secrets scans only - Shahid Org."
-        verbose: true
+      - id: semgrep
+        entry: semgrep
+        # Replace <SEMGREP_RULESET_URL> with your custom rule source
+        # or see https://semgrep.dev/explore to select a ruleset and copy its URL
+        args: ['--config', 'p/secrets', '--error', '--skip-unknown-extensions']
