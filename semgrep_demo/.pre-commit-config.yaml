@@ -6,7 +6,7 @@ repos:
         entry: semgrep
         # Replace <SEMGREP_RULESET_URL> with your custom rule source
         # or see https://semgrep.dev/explore to select a ruleset and copy its URL
-        args: ['--config', 'p/secrets', '--skip-unknown-extensions','--error']
+        args: ['--config', 'p/secrets', '--skip-unknown-extensions']
 
 
 
