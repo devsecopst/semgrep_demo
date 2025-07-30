@@ -14,8 +14,6 @@ public class PureVulnerable {
         int token = random.nextInt();
         System.out.println("Generated session token: " + token);
 
-
-
         // 🔥 2. Command Injection
         System.out.print("Enter command to run: ");
         String userCommand = scanner.nextLine();
@@ -26,7 +24,6 @@ public class PureVulnerable {
         while ((line = reader.readLine()) != null) {
             System.out.println(line);
         }
-
         // 🔥 3. Path Traversal
         System.out.print("Enter filename to read: ");
         String filename = scanner.nextLine();
