@@ -4,9 +4,4 @@ repos:
     hooks:
       - id: semgrep
         entry: semgrep
-        # Replace <SEMGREP_RULESET_URL> with your custom rule source
-        # or see https://semgrep.dev/explore to select a ruleset and copy its URL
-        args: ['--config', 'p/secrets', '--skip-unknown-extensions']
-
-
-
+        args: ['--config', 'p/secrets','--config','p/comment','--skip-unknown-extensions','--verbose']
