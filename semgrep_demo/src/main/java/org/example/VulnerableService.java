@@ -63,6 +63,7 @@ public class VulnerableService {
         }
     }
 
+
     // Insecure Log4j usage with user-controlled input leading to JNDI injection
     public void log4jJndiInjection(String userInput) {
         // This logs user input without sanitization — vulnerable to Log4Shell
