@@ -1,15 +1,4 @@
 repos:
-  - repo: https://github.com/semgrep/pre-commit
-    rev: 'v1.131.0'
-    hooks:
-      - id: semgrep
-        entry: bash
-        args:
-          - -c
-          - semgrep --config p/secrets "$@" 2>&1 | awk '/Scan Summary/,/^CI scan completed successfully\./' || true
-          - dummy
-        verbose: true
-
   - repo: local
     hooks:
       - id: semgrep-warn-only
