@@ -34,6 +34,7 @@ public class PureVulnerable {
             while ((line = fileReader.readLine()) != null) {
                 System.out.println(line);
             }
+
         } else {
             System.out.println("File  not found.");
         }
