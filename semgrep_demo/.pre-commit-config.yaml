@@ -1,0 +1,5 @@
+repos:
+  - repo: https://github.com/semgrep/pre-commit
+    rev: 'v1.131.0'  # Use latest Semgrep version
+    hooks:
+      - id: semgrep
