@@ -1,6 +1,6 @@
 repos:
   - repo: https://github.com/semgrep/pre-commit
-    rev: 'v1.131.0'  # Use latest Semgrep version
+    rev: 'v1.131.0'
     hooks:
       - id: semgrep
         entry: bash
@@ -8,4 +8,21 @@ repos:
           - -c
           - semgrep --config p/secrets "$@" 2>&1 | awk '/Scan Summary/,/^CI scan completed successfully\./' || true
           - dummy
+        verbose: true
+
+  - repo: local
+    hooks:
+      - id: semgrep-warn-only
+        name: Devsecops-Semgrep Warn-Only
+        description: Used to conduct semgrep code and secrets scans only.
+        entry: bash
+        language: system
+        args:
+          - -c
+          - semgrep --config p/comment --config p/secrets "$@" 2>&1 | awk '/Scan Summary/,/^scan completed successfully\./' || true
+          - dummy
+        stages: [pre-commit]
+        pass_filenames: false
+        exclude_types: [yaml, xml, shell]
+        exclude: '\.(txt|log)$'
         verbose: true
