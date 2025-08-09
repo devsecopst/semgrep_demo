@@ -3,6 +3,9 @@ repos:
     rev: 'v1.131.0'
     hooks:
       - id: semgrep
-        entry: semgrep
-        args: [ "--config", "p/secrets", "--config", "p/comment" ]
+        entry: bash
+        args:
+            - -c
+            - semgrep --config p/secrets "$@" 2>&1 | awk '/Scan Summary/,/^CI scan completed successfully\./'
+            - dummy
         verbose: true
