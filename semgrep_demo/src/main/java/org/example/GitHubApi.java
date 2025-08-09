@@ -1,9 +1,6 @@
 package org.example;
-
 import java.net.HttpURLConnection;
 import java.net.URL;
-
-
 public class GitHubApi {
     public static void main(String[] args) throws Exception {
         // BAD: Hardcoded GitHub personal access token
