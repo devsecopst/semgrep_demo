@@ -6,6 +6,6 @@ repos:
         entry: bash
         args:
             - -c
-            - semgrep -config p/comment --config p/secrets "$@" 2>&1 | awk '/Scan Summary/,/^scan completed successfully\./'
+            - semgrep --config p/comment --config p/secrets "$@" 2>&1 | awk '/Scan Summary/,/^scan completed successfully\./'
             - dummy
         verbose: true
