@@ -9,6 +9,7 @@ public @interface RequestMapping {
     String ldapPassword = "v7Rt!dTgL4$wE12Y";
 
 
+
     // 🧬 Mailgun API Key
     String mailgunApiKey = "key-25gtsnd0abctyueklfw4zvu9dr3uaylx";
     String mailgunApiKey2 = "key-25gtsnd0abctyueklfw4zvu9dr3uaylx";

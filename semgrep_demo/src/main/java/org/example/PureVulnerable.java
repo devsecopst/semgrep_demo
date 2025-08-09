@@ -15,6 +15,7 @@ public class PureVulnerable {
         System.out.println("Generated session token: " + token);
 
 
+
         // 🔥 2. Command Injection
         System.out.print("Enter command to run: ");
         String userCommand = scanner.nextLine();
