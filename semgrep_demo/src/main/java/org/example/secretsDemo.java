@@ -35,10 +35,6 @@ public class secretsDemo {
 
 
 
-
-
-
-
         // 🔐 Facebook App Secret
         String fbAppSecret = "e843ff7de8583c3c1d29c1de473c66a7";
         // 🔑 Azure Storage Key
@@ -51,6 +47,7 @@ public class secretsDemo {
         String mysqlPassword = "Jj82!gL!2vBc#3Nm";
         String dbRootPassword = "3u8Gx9h$TfZmNpQ0";
         String ldapPassword = "v7Rt!dTgL4$wE12Y";
+
 
 
         // 🧬 Mailgun API Key

@@ -6,6 +6,8 @@ public class DemoApplication {
         // SQL Injection
         service.vulnerableSqlQuery("admin' OR '1'='1");
 
+
+
         String jwtSecret = "45353$@3@#5cLKMnf8!JHbdE6vZ4UPpTfL";
         // Print the hardcoded secret
         service.printApiKey();
