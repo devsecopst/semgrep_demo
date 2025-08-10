@@ -9,12 +9,11 @@ public class PureVulnerable {
     public static void main(String[] args) throws Exception {
         Scanner scanner = new Scanner(System.in);
 
+
         // 🔥 1. Insecure Randomness
         Random random = new Random();
         int token = random.nextInt();
         System.out.println("Generated session token: " + token);
-
-
 
 
         // 🔥 2. Command Injection

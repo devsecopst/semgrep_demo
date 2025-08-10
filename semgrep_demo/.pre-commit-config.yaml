@@ -1,21 +1,8 @@
 repos:
-  - repo: local
+  - repo: https://github.com/semgrep/pre-commit
+    rev: 'v1.131.0'
     hooks:
-      - id: semgrep-warn-only
-        name: Devsecops-Semgrep Warn-Only
-        description: Used to conduct semgrep code and secrets scans only.
-        entry: bash
-        language: system
-        args:
-          - -c
-          - semgrep  --config p/comment --config p/secrets "$@" 2>&1 | awk '/Scan Summary/,/^scan completed successfully\./' || true
-          - dummy
-        stages: [pre-commit]
-        pass_filenames: false
-        exclude_types: [yaml, xml, shell]
-        exclude: '\.(txt|log)$'
+      - id: semgrep
+        entry: semgrep
+        args: ["--config", "p/secrets", "--config", "p/comment"]
         verbose: true
-
-
-
-
