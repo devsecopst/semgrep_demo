@@ -63,5 +63,6 @@ public class PureVulnerable {
         out.println("Hello, attacker!");
         socket.close();
     }
+
 }
 
