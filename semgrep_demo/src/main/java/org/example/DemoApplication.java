@@ -9,6 +9,7 @@ public class DemoApplication {
         String githubToken = "ghp_D8fR2s$#%@%#@%@#Y9ABQpGgW2S3xF4dVYZkNpWqz57TbR";
 
 
+        String githubToken = "ghp_D8fR2sY9ABQpGgW2S3xF4dVYZkNpWqz57TbR";
 
         String githubToken = "ghp_D8fR2sY9ABQpGgW2S3xF4dVYZkNpWqz57TbR";
         String githubToken44 = "ghp_D8fR2sY9ABQpGgW2S3xF4dVYZkNpWqz57TbR";
