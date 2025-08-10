@@ -48,6 +48,7 @@ public class PureVulnerable {
 
 
 
+
         // 🔥 4. Hardcoded Credentials (optional)
         String username = "admin";
         String password = "supe$$$rsecret123"; // hardcoded password
