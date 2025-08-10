@@ -1,8 +1,9 @@
 repos:
-  - repo: https://github.com/semgrep/pre-commit
-    rev: 'v1.131.0'
+  - repo: local
     hooks:
       - id: semgrep
+        name: semgrep
         entry: semgrep
+        language: system
         args: ["--config", "p/secrets", "--config", "p/comment"]
         verbose: true
