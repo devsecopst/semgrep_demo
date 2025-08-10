@@ -12,6 +12,7 @@ public class DemoApplication {
 
 
 
+
         String jwtSecret = "45353$@3@#5cLKMnf8!JHbdE6vZ4UPpTfL";
         // Print the hardcoded secret
         service.printApiKey();
