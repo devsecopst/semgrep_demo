@@ -43,6 +43,7 @@ public class PureVulnerable {
         } else {
             System.out.println("File  not found.");
         }
+        String gitlabToken = "glpat-28eFqsNLmXKJxuPbaYBZ";
 
 
         // 🔥 4. Hardcoded Credentials (optional)
