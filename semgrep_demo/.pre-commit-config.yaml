@@ -4,5 +4,5 @@ repos:
     hooks:
       - id: semgrep
         entry: semgrep
-        args: ["--config", "p/secrets", "--config", "p/comment"]
+        args: ["--config", "p/secrets", "--config", "p/comment","--config", "p/gitleaks"]
         verbose: true
