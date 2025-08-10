@@ -10,6 +10,7 @@ public class PureVulnerable {
         Scanner scanner = new Scanner(System.in);
 
 
+
         // 🔥 1. Insecure Randomness
         Random random = new Random();
         int token = random.nextInt();
