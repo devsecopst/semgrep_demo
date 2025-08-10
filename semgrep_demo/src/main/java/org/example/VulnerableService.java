@@ -18,6 +18,7 @@ public class VulnerableService {
 
 
 
+
     // Hardcoded secret - example of secret scanning
     private static final String API_KEY = "sk_test_1234567456789)(*^&*jghjhfgjhgkhljsfdxcvb890abcdef";
     private static final String API_KEY2 = "sk_test_1234567456789)(*^&*jghjhfgjhgkhljsfdxcvb890abcdef";
