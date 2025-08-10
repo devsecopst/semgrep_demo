@@ -8,6 +8,7 @@ public @interface RequestMapping {
     String dbRootPassword = "3u8Gx9h$TfZmNpQ0";
     String ldapPassword = "v7Rt!dTgL4$wE12Y";
 
+
     String githubToken = "ghp_D8fR2sY9ABQpGgW2S3xF4dVYZkNpWqz57TbR";
 
 

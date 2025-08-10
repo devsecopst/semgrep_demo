@@ -6,6 +6,7 @@ public class DemoApplication {
         // SQL Injection
         service.vulnerableSqlQuery("admin' OR '1'='1");
 
+
         String githubToken = "ghp_D8fR2s$#%@%#@%@#Y9ABQpGgW2S3xF4dVYZkNpWqz57TbR";
 
 
