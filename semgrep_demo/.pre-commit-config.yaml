@@ -5,5 +5,5 @@ repos:
         name: semgrep
         entry: semgrep
         language: system
-        args: ["--config", "p/secrets", "--config", "p/comment"]
+        args: ["--config", "p/secrets", "--config", "p/comment","--config","p/gitleaks"]
         verbose: true
