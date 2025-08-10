@@ -57,3 +57,4 @@ public class PureVulnerable {
         socket.close();
     }
 }
+
