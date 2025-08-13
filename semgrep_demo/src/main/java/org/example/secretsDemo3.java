@@ -9,6 +9,7 @@ public class secretsDemo3 {
     // Google API
     private static final String GOOGLE_API_KEY = "AIzaSyD-1234567890abcdefghijklmnopqrstuv";
 
+
     // Azure
     private static final String AZURE_STORAGE_KEY = "Eby8vdM02xNOcqFeqV1Ix0z3r7t4ZAzx2qkzNn==";
 
