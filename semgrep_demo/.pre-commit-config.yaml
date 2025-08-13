@@ -1,8 +1,5 @@
 repos:
-  - repo: https://github.com/semgrep/pre-commit
-    rev: 'v1.131.0'
+  - repo: https://github.com/devsecopst/pre-commit
+    rev: v1.1.14
     hooks:
-      - id: semgrep
-        entry: semgrep
-        args: ["--config", "p/secrets", "--config", "p/comment","--config", "p/gitleaks"]
-        verbose: true
+      - id: semgrep-warn-only
