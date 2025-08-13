@@ -1,19 +1,5 @@
 repos:
-  - repo: local
+  - repo: https://github.com/devsecopst/pre-commit
+    rev: v1.1.16
     hooks:
       - id: semgrep-warn-only!
-        name: Devsecops-Semgrep Warn-Only!
-        description: Used to conduct semgrep code and secrets scans only.
-        entry: bash
-        language: system
-        args:
-          - -c
-          - semgrep  --config="p/gitleaks" --config="p/comment" --config="p/secrets" "$@" 2>&1 || true
-          - dummy
-        stages: [pre-commit]
-        pass_filenames: true
-        exclude_types: [yaml, xml, shell]
-        exclude: '\.(txt|log)$'
-        verbose: true
-
-
