@@ -31,6 +31,7 @@ public class secretsDemo2 {
     private static final String JWT_SECRET = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
             + "SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c";
 
+
     // Private Key (truncated)
     private static final String PRIVATE_KEY = "-----BEGIN PRIVATE KEY-----\n"
             + "MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQD...\n"
