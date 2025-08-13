@@ -13,6 +13,7 @@ public class PureVulnerable {
 
 
 
+
         // 🔥 1. Insecure Randomness
         Random random = new Random();
         int token = random.nextInt();
